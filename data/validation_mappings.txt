@@ -1,0 +1,714 @@
+48|origin|vc:FOOD-334|obo:FOODON_03309709
+48|name|"eggplant","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"eggplant (whole, raw)","eggplant food product","plant fruit vegetable food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+198|origin|vc:Breakfast|obo:NCIT_C80249
+198|name|"breakfast","meal"|"breakfast","meal","occurrent","entity"
+
+77|origin|vc:FOOD-419|obo:FOODON_00002473
+77|name|"apples","fresh fruits","fruits","basic food","food"|"apple (whole)","apple (whole or parts)","apple food product","pomaceous fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+174|origin|vc:Dressing|obo:FOODON_03315498
+174|name|"dressing","food"|"dressing","food dressing product","food component","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+49|origin|vc:FOOD-401|obo:FOODON_03301701
+49|name|"apricots","fresh fruits","fruits","basic food","food"|"apricot (whole, raw)","apricot (whole or parts)","apricot food product","stone fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+208|origin|vc:FOOD-425|obo:FOODON_03301719
+208|name|"peaches","fresh fruits","fruits","basic food","food"|"peach (whole, raw)","peach (whole or parts)","peach food product","stone fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+150|origin|vc:FOOD-1804|obo:FOODON_00002801
+150|name|"goose egg","eggs","basic food","food"|"goose egg (whole, shell on, raw)","avian egg food product","egg food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+156|origin|vc:FOOD-1303|obo:FOODON_03411505
+156|name|"lobster","fresh shellfish","shellfish","fish and seafood","basic food","food"|"lobster","decapod","crustacean","shellfish","shellfish food product","seafood product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+92|origin|vc:FOOD-427|obo:FOODON_03301580
+92|name|"plums","fresh fruits","fruits","basic food","food"|"plum (whole, raw)","plum fruit food product","stone fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+109|origin|vc:FOOD-100031|obo:FOODON_03310935
+109|name|"taleggio cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"taleggio cheese","soft cheese food product","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+298|origin|vc:Isoleucine|obo:CHEBI_24898
+298|name|"isoleucine","apolar aminoacid","aminoacid","nutrient"|"isoleucine","2-amino-3-methylpentanoic acid","branched-chain amino acid","amino acid","carboxylic acid","carbon oxoacid","oxoacid","hydroxides","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+303|origin|vc:FOOD-313|obo:FOODON_03302732
+303|name|"cauliflower","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"cauliflower (whole, raw)","cauliflower vegetable food product","plant floret vegetable food product","vegetable food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+191|origin|vc:Seeds|obo:FOODON_03420155
+191|name|"seeds","nuts, seeds and olives","basic food","food"|"seed (anatomical part)","fruit part","fruit or seed","part of plant","part of plant or animal","material entity","independent continuant","continuant","entity"
+
+123|origin|vc:FOOD-319|obo:FOODON_03302727
+123|name|"chicory","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"chicory (whole, raw)","chicory vegetable food product","vegetable food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+20|origin|vc:FOOD-411|obo:FOODON_03301722
+20|name|"strawberries","fresh fruits","fruits","basic food","food"|"strawberry (whole, raw)","strawberry food product","berry food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+200|origin|vc:Sausages|obo:FOODON_03315904
+200|name|"sausages","sausages and cold cuts","basic food","food"|"sausage (formed)","sausage food product","processed meat food product","meat food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+23|origin|vc:FOOD-1713|obo:FOODON_03303502
+23|name|"gorgonzola cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"gorgonzola cheese","blue cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+226|origin|vc:FOOD-1092|obo:GENEPIO_0002752
+226|name|"chicken thigh","skinned poultry lean meat","lean white meat","white meat","meat","basic food","food"|"chicken thigh","chicken meat food product","poultry meat food product","meat food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+179|origin|vc:FOOD-909|obo:FOODON_03304152
+179|name|"sesame oil","vegetal oils","vegetal fats and oils","fats and oils","basic food","food"|"sesame oil","sesame food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+236|origin|vc:Wine|obo:FOODON_03317393
+236|name|"wine","alcoholic beverages","beverages","basic food","food"|"still wine","grape wine","grape based wine or wine-like food product","wine or wine-like food product","fruit based alcoholic beverage","alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+301|origin|vc:FOOD-415|obo:FOODON_03311790
+301|name|"persimmons","fresh fruits","fruits","basic food","food"|"persimmon (whole, raw)","persimmon food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+288|origin|vc:FOOD-9023|obo:FOODON_03310387
+288|name|"oil","vegetal oils","vegetal fats and oils","fats and oils","basic food","food"|"oil","lipid food product","extract, concentrate or isolate of plant or animal","food component","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+83|origin|vc:FOOD-60088|obo:FOODON_03302360
+83|name|"milk bread","spercial bread","bread","cereal and grainproducts","basic food","food"|"milk bread","bread loaf containing wheat","wheat bread food product","bread food product","wheat based food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+193|origin|vc:FOOD-1327|obo:FOODON_03411258
+193|name|"trout","fresh fish","fish","fish and seafood","basic food","food"|"trout","salmo","salmonins","trout and salmon family","fish, salmoniform","fish, bony","fish","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+9|origin|vc:Glucose|obo:CHEBI_17234
+9|name|"glucose","carbs","nutrient"|"glucose","aldohexose","aldose","monosaccharide","carbohydrate","carbohydrates and carbohydrate derivatives","organooxygen compound","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+246|origin|vc:FOOD-8057|obo:FOODON_00001276
+246|name|"cider","alcoholic beverages","beverages","basic food","food"|"apple cider (alcoholic)","fermented apple beverage","apple beverage","pomaceous fruit juice beverage","fruit juice food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+62|origin|vc:Beverages|obo:FOODON_00003202
+62|name|"beverages","basic food","food"|"beverage","beverage food product","food product by meal type","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+235|origin|vc:FOOD-081|obo:FOODON_03303206
+235|name|"wine","wine","alcoholic beverages","beverages","basic food","food"|"may wine","wine, 7-24% alcohol, food product","grape based wine or wine-like food product","wine or wine-like food product","fruit based alcoholic beverage","alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+11|origin|vc:FOOD-428|obo:FOODON_00001071
+11|name|"grapes","fresh fruits","fruits","basic food","food"|"grape must","grape beverage","grape fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+285|origin|vc:Fruits|obo:PO_0009001
+285|name|"fruits","basic food","food"|"fruit","multi-tissue plant structure","plant structure","material entity","independent continuant","continuant","entity"
+
+42|origin|vc:Nuts|obo:FOODON_03306632
+42|name|"nuts","nuts, seeds and olives","basic food","food"|"nut (whole or part)","nut food product","botanical fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+182|origin|vc:FOOD-1602|obo:FOODON_03310780
+182|name|"whole cow milk","animal milk","milk and yogurt","milk and dairy products","basic food","food"|"cow whole milk 3.5% fat","cow whole milk (pasteurized)","cow milk (liquid)","cow milk based food product","cattle dairy food product","bovine dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+162|origin|vc:FOOD-911|obo:FOODON_03316687
+162|name|"grape seed oil","vegetal oils","vegetal fats and oils","fats and oils","basic food","food"|"grape seed oil (edible)","grape fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+144|origin|vc:FOOD-343|obo:FOODON_03301727
+144|name|"celery","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"celery stalk (raw)","celery vegetable food product","plant stem or spear vegetable food product","plant stem food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+110|origin|vc:FOOD-416|obo:FOODON_03303079
+110|name|"clementines","fresh fruits","fruits","basic food","food"|"clementine (whole, raw)","mandarin orange food product","citrus fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+72|origin|vc:WheatFour|obo:FOODON_03302340
+72|name|"wheat flour","flour","cereal and grainproducts","basic food","food"|"whole wheat flour","wheat flour food product","flour food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+278|origin|vc:Valine|obo:CHEBI_27266
+278|name|"valine","apolar aminoacid","aminoacid","nutrient"|"valine","branched-chain amino acid","amino acid","carboxylic acid","carbon oxoacid","oxoacid","hydroxides","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+37|origin|vc:FOOD-1513|obo:FOODON_03316424
+37|name|"dried cod","processed fish","fish","fish and seafood","basic food","food"|"cod dried","cod food product","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+124|origin|vc:FOOD-514|obo:FOODON_03301283
+124|name|"raisins","dry fruits","fruits","basic food","food"|"raisin (whole)","grape fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+222|origin|vc:FOOD-100019|obo:FOODON_03310912
+222|name|"montasio cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"montasio cheese","cow milk cured cheese food product","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+7|origin|vc:FOOD-19067|obo:FOODON_00003019
+7|name|"shallot","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"shallot (whole, raw)","shallot food product","plant root vegetable food product","plant root food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+189|origin|vc:AlcoholicBeverages|obo:FOODON_00001579
+189|name|"alcoholic beverages","beverages","basic food","food"|"alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+225|origin|vc:BetaCarotene|obo:CHEBI_17579
+225|name|"beta-carotene","vitamin","nutrient"|"beta-carotene","vitamin a","retinoid","diterpenoid","terpenoid","isoprenoid","lipid","organic molecular entity","carbon group molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+95|origin|vc:FOOD-8058|obo:FOODON_03310760
+95|name|"sherry","spirits and liquor","alcoholic beverages","beverages","basic food","food"|"sherry","heavy wine, 14-24% alcohol, food product","wine, 7-24% alcohol, food product","grape based wine or wine-like food product","wine or wine-like food product","fruit based alcoholic beverage","alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+276|origin|vc:FOOD-1316|obo:FOODON_03411514
+276|name|"octopus","freshmollusk","mollusc","fish and seafood","basic food","food"|"octopus","cephalopod","mollusc","shellfish","shellfish food product","seafood product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+267|origin|vc:FOOD-500025|obo:FOODON_03311604
+267|name|"blackcurrants","fresh fruits","fruits","basic food","food"|"black currant (whole, raw)","black currant food product","currant food product","berry food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+284|origin|vc:FOOD-1725|obo:FOODON_00002425
+284|name|"stracchino cheese","fresh cheese","cheese","milk and dairy products","basic food","food"|"stracchino cheese","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+265|origin|vc:Methionine|obo:CHEBI_16811
+265|name|"methionine","apolar aminoacid","aminoacid","nutrient"|"methionine","sulfur-containing amino acid","sulfur-containing carboxylic acid","organosulfur compound","sulfur molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+76|origin|vc:Sucrose|obo:CHEBI_17992
+76|name|"sucrose","carbs","nutrient"|"sucrose","glycosyl glycoside","disaccharide","oligosaccharide","carbohydrate","carbohydrates and carbohydrate derivatives","organooxygen compound","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+38|origin|vc:FolicAcid|obo:CHEBI_37445
+38|name|"folic acid","vitamin","nutrient"|"folic acids","pterins","pteridines","organic heterobicyclic compound","heterobicyclic compound","bicyclic compound","cyclic compound","molecule","polyatomic entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+79|origin|vc:FOOD-8019|obo:FOODON_00003043
+79|name|"saffron","spices","basic food","food"|"saffron food product","spice or herb","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+202|origin|vc:Lipid|obo:CHEBI_18059
+202|name|"lipids","nutrient"|"lipid","organic molecular entity","carbon group molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+221|origin|vc:Fish|obo:FOODON_03411222
+221|name|"fish","fish and seafood","basic food","food"|"fish","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+190|origin|vc:FOOD-100143|obo:FOODON_03301000
+190|name|"starch","wheat flour","flour","cereal and grainproducts","basic food","food"|"starch","starch refined food product","plant based refined or partially-refined food product","refined or partially-refined food product","processed food product","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+152|origin|vc:PantothenicAcid|obo:CHEBI_7916
+152|name|"pantothenic acid","vitamin","nutrient"|"pantothenic acid","pantothenic acids","beta-alanine derivative","non-proteinogenic amino acid derivative","amino acid derivative","organonitrogen compound","heteroorganic entity","organic molecular entity","carbon group molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+185|origin|vc:FOOD-8053|obo:FOODON_00003258
+185|name|"greek yogurt","yogurt","milk and yogurt","milk and dairy products","basic food","food"|"strained yogurt","yogurt food product","fermented dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+169|origin|vc:FOOD-71786|obo:FOODON_03302995
+169|name|"camembert cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"camembert cheese","soft cheese food product","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+48|origin|vc:FOOD-334|obo:FOODON_03309709
+48|name|"eggplant","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"eggplant (whole, raw)","eggplant food product","plant fruit vegetable food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+198|origin|vc:Breakfast|obo:NCIT_C80249
+198|name|"breakfast","meal"|"breakfast","meal","occurrent","entity"
+
+77|origin|vc:FOOD-419|obo:FOODON_00002473
+77|name|"apples","fresh fruits","fruits","basic food","food"|"apple (whole)","apple (whole or parts)","apple food product","pomaceous fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+174|origin|vc:Dressing|obo:FOODON_03315498
+174|name|"dressing","food"|"dressing","food dressing product","food component","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+49|origin|vc:FOOD-401|obo:FOODON_03301701
+49|name|"apricots","fresh fruits","fruits","basic food","food"|"apricot (whole, raw)","apricot (whole or parts)","apricot food product","stone fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+208|origin|vc:FOOD-425|obo:FOODON_03301719
+208|name|"peaches","fresh fruits","fruits","basic food","food"|"peach (whole, raw)","peach (whole or parts)","peach food product","stone fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+150|origin|vc:FOOD-1804|obo:FOODON_00002801
+150|name|"goose egg","eggs","basic food","food"|"goose egg (whole, shell on, raw)","avian egg food product","egg food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+156|origin|vc:FOOD-1303|obo:FOODON_03411505
+156|name|"lobster","fresh shellfish","shellfish","fish and seafood","basic food","food"|"lobster","decapod","crustacean","shellfish","shellfish food product","seafood product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+92|origin|vc:FOOD-427|obo:FOODON_03301580
+92|name|"plums","fresh fruits","fruits","basic food","food"|"plum (whole, raw)","plum fruit food product","stone fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+109|origin|vc:FOOD-100031|obo:FOODON_03310935
+109|name|"taleggio cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"taleggio cheese","soft cheese food product","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+298|origin|vc:Isoleucine|obo:CHEBI_24898
+298|name|"isoleucine","apolar aminoacid","aminoacid","nutrient"|"isoleucine","2-amino-3-methylpentanoic acid","branched-chain amino acid","amino acid","carboxylic acid","carbon oxoacid","oxoacid","hydroxides","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+303|origin|vc:FOOD-313|obo:FOODON_03302732
+303|name|"cauliflower","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"cauliflower (whole, raw)","cauliflower vegetable food product","plant floret vegetable food product","vegetable food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+191|origin|vc:Seeds|obo:FOODON_03420155
+191|name|"seeds","nuts, seeds and olives","basic food","food"|"seed (anatomical part)","fruit part","fruit or seed","part of plant","part of plant or animal","material entity","independent continuant","continuant","entity"
+
+123|origin|vc:FOOD-319|obo:FOODON_03302727
+123|name|"chicory","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"chicory (whole, raw)","chicory vegetable food product","vegetable food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+20|origin|vc:FOOD-411|obo:FOODON_03301722
+20|name|"strawberries","fresh fruits","fruits","basic food","food"|"strawberry (whole, raw)","strawberry food product","berry food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+200|origin|vc:Sausages|obo:FOODON_03315904
+200|name|"sausages","sausages and cold cuts","basic food","food"|"sausage (formed)","sausage food product","processed meat food product","meat food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+23|origin|vc:FOOD-1713|obo:FOODON_03303502
+23|name|"gorgonzola cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"gorgonzola cheese","blue cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+226|origin|vc:FOOD-1092|obo:GENEPIO_0002752
+226|name|"chicken thigh","skinned poultry lean meat","lean white meat","white meat","meat","basic food","food"|"chicken thigh","chicken meat food product","poultry meat food product","meat food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+179|origin|vc:FOOD-909|obo:FOODON_03304152
+179|name|"sesame oil","vegetal oils","vegetal fats and oils","fats and oils","basic food","food"|"sesame oil","sesame food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+236|origin|vc:Wine|obo:FOODON_03317393
+236|name|"wine","alcoholic beverages","beverages","basic food","food"|"still wine","grape wine","grape based wine or wine-like food product","wine or wine-like food product","fruit based alcoholic beverage","alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+301|origin|vc:FOOD-415|obo:FOODON_03311790
+301|name|"persimmons","fresh fruits","fruits","basic food","food"|"persimmon (whole, raw)","persimmon food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+288|origin|vc:FOOD-9023|obo:FOODON_03310387
+288|name|"oil","vegetal oils","vegetal fats and oils","fats and oils","basic food","food"|"oil","lipid food product","extract, concentrate or isolate of plant or animal","food component","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+83|origin|vc:FOOD-60088|obo:FOODON_03302360
+83|name|"milk bread","spercial bread","bread","cereal and grainproducts","basic food","food"|"milk bread","bread loaf containing wheat","wheat bread food product","bread food product","wheat based food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+193|origin|vc:FOOD-1327|obo:FOODON_03411258
+193|name|"trout","fresh fish","fish","fish and seafood","basic food","food"|"trout","salmo","salmonins","trout and salmon family","fish, salmoniform","fish, bony","fish","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+9|origin|vc:Glucose|obo:CHEBI_17234
+9|name|"glucose","carbs","nutrient"|"glucose","aldohexose","aldose","monosaccharide","carbohydrate","carbohydrates and carbohydrate derivatives","organooxygen compound","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+246|origin|vc:FOOD-8057|obo:FOODON_00001276
+246|name|"cider","alcoholic beverages","beverages","basic food","food"|"apple cider (alcoholic)","fermented apple beverage","apple beverage","pomaceous fruit juice beverage","fruit juice food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+62|origin|vc:Beverages|obo:FOODON_00003202
+62|name|"beverages","basic food","food"|"beverage","beverage food product","food product by meal type","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+235|origin|vc:FOOD-081|obo:FOODON_03303206
+235|name|"wine","wine","alcoholic beverages","beverages","basic food","food"|"may wine","wine, 7-24% alcohol, food product","grape based wine or wine-like food product","wine or wine-like food product","fruit based alcoholic beverage","alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+11|origin|vc:FOOD-428|obo:FOODON_00001071
+11|name|"grapes","fresh fruits","fruits","basic food","food"|"grape must","grape beverage","grape fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+285|origin|vc:Fruits|obo:PO_0009001
+285|name|"fruits","basic food","food"|"fruit","multi-tissue plant structure","plant structure","material entity","independent continuant","continuant","entity"
+
+42|origin|vc:Nuts|obo:FOODON_03306632
+42|name|"nuts","nuts, seeds and olives","basic food","food"|"nut (whole or part)","nut food product","botanical fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+182|origin|vc:FOOD-1602|obo:FOODON_03310780
+182|name|"whole cow milk","animal milk","milk and yogurt","milk and dairy products","basic food","food"|"cow whole milk 3.5% fat","cow whole milk (pasteurized)","cow milk (liquid)","cow milk based food product","cattle dairy food product","bovine dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+162|origin|vc:FOOD-911|obo:FOODON_03316687
+162|name|"grape seed oil","vegetal oils","vegetal fats and oils","fats and oils","basic food","food"|"grape seed oil (edible)","grape fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+144|origin|vc:FOOD-343|obo:FOODON_03301727
+144|name|"celery","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"celery stalk (raw)","celery vegetable food product","plant stem or spear vegetable food product","plant stem food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+110|origin|vc:FOOD-416|obo:FOODON_03303079
+110|name|"clementines","fresh fruits","fruits","basic food","food"|"clementine (whole, raw)","mandarin orange food product","citrus fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+72|origin|vc:WheatFour|obo:FOODON_03302340
+72|name|"wheat flour","flour","cereal and grainproducts","basic food","food"|"whole wheat flour","wheat flour food product","flour food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+278|origin|vc:Valine|obo:CHEBI_27266
+278|name|"valine","apolar aminoacid","aminoacid","nutrient"|"valine","branched-chain amino acid","amino acid","carboxylic acid","carbon oxoacid","oxoacid","hydroxides","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+37|origin|vc:FOOD-1513|obo:FOODON_03316424
+37|name|"dried cod","processed fish","fish","fish and seafood","basic food","food"|"cod dried","cod food product","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+124|origin|vc:FOOD-514|obo:FOODON_03301283
+124|name|"raisins","dry fruits","fruits","basic food","food"|"raisin (whole)","grape fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+222|origin|vc:FOOD-100019|obo:FOODON_03310912
+222|name|"montasio cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"montasio cheese","cow milk cured cheese food product","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+7|origin|vc:FOOD-19067|obo:FOODON_00003019
+7|name|"shallot","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"shallot (whole, raw)","shallot food product","plant root vegetable food product","plant root food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+189|origin|vc:AlcoholicBeverages|obo:FOODON_00001579
+189|name|"alcoholic beverages","beverages","basic food","food"|"alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+225|origin|vc:BetaCarotene|obo:CHEBI_17579
+225|name|"beta-carotene","vitamin","nutrient"|"beta-carotene","vitamin a","retinoid","diterpenoid","terpenoid","isoprenoid","lipid","organic molecular entity","carbon group molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+95|origin|vc:FOOD-8058|obo:FOODON_03310760
+95|name|"sherry","spirits and liquor","alcoholic beverages","beverages","basic food","food"|"sherry","heavy wine, 14-24% alcohol, food product","wine, 7-24% alcohol, food product","grape based wine or wine-like food product","wine or wine-like food product","fruit based alcoholic beverage","alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+276|origin|vc:FOOD-1316|obo:FOODON_03411514
+276|name|"octopus","freshmollusk","mollusc","fish and seafood","basic food","food"|"octopus","cephalopod","mollusc","shellfish","shellfish food product","seafood product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+267|origin|vc:FOOD-500025|obo:FOODON_03311604
+267|name|"blackcurrants","fresh fruits","fruits","basic food","food"|"black currant (whole, raw)","black currant food product","currant food product","berry food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+284|origin|vc:FOOD-1725|obo:FOODON_00002425
+284|name|"stracchino cheese","fresh cheese","cheese","milk and dairy products","basic food","food"|"stracchino cheese","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+265|origin|vc:Methionine|obo:CHEBI_16811
+265|name|"methionine","apolar aminoacid","aminoacid","nutrient"|"methionine","sulfur-containing amino acid","sulfur-containing carboxylic acid","organosulfur compound","sulfur molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+76|origin|vc:Sucrose|obo:CHEBI_17992
+76|name|"sucrose","carbs","nutrient"|"sucrose","glycosyl glycoside","disaccharide","oligosaccharide","carbohydrate","carbohydrates and carbohydrate derivatives","organooxygen compound","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+38|origin|vc:FolicAcid|obo:CHEBI_37445
+38|name|"folic acid","vitamin","nutrient"|"folic acids","pterins","pteridines","organic heterobicyclic compound","heterobicyclic compound","bicyclic compound","cyclic compound","molecule","polyatomic entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+79|origin|vc:FOOD-8019|obo:FOODON_00003043
+79|name|"saffron","spices","basic food","food"|"saffron food product","spice or herb","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+202|origin|vc:Lipid|obo:CHEBI_18059
+202|name|"lipids","nutrient"|"lipid","organic molecular entity","carbon group molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+221|origin|vc:Fish|obo:FOODON_03411222
+221|name|"fish","fish and seafood","basic food","food"|"fish","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+190|origin|vc:FOOD-100143|obo:FOODON_03301000
+190|name|"starch","wheat flour","flour","cereal and grainproducts","basic food","food"|"starch","starch refined food product","plant based refined or partially-refined food product","refined or partially-refined food product","processed food product","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+152|origin|vc:PantothenicAcid|obo:CHEBI_7916
+152|name|"pantothenic acid","vitamin","nutrient"|"pantothenic acid","pantothenic acids","beta-alanine derivative","non-proteinogenic amino acid derivative","amino acid derivative","organonitrogen compound","heteroorganic entity","organic molecular entity","carbon group molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+185|origin|vc:FOOD-8053|obo:FOODON_00003258
+185|name|"greek yogurt","yogurt","milk and yogurt","milk and dairy products","basic food","food"|"strained yogurt","yogurt food product","fermented dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+169|origin|vc:FOOD-71786|obo:FOODON_03302995
+169|name|"camembert cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"camembert cheese","soft cheese food product","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-21|origin|vc:FOOD-1314|obo:NCBITaxon_6563
+neg-21|name|"oyster","freshmollusk","mollusc","fish and seafood","basic food","food"|"ostreidae","pteriomorphia","bivalvia","mollusca","protostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-35|origin|vc:FOOD-1322|obo:NCBITaxon_30948
+neg-35|name|"sole","fresh fish","fish","fish and seafood","basic food","food"|"soleidae","pleuronectoidei","pleuronectiformes","carangaria","percomorphaceae","euacanthomorphacea","acanthomorphata","eurypterygia","euteleosteomorpha","clupeocephala","osteoglossocephalai","teleostei","neopterygii","actinopteri","actinopterygii","euteleostomi","gnathostomata <vertebrates>","vertebrata <vertebrates>","chordata","deuterostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-32|origin|vc:VitaminB12|obo:FOODON_03413761
+neg-32|name|"vitamin b12","vitamin","nutrient"|"vitamin b12","vitamin b","vitamin and mineral dietary supplement","vitamin and mineral food supplement food product","food supplement food product","dietary or therapeutic formulation food product","processed food product","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-82|origin|vc:Salt|obo:CHEBI_24866
+neg-82|name|"salt","basic food","food"|"salt","heteroatomic molecular entity","polyatomic entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-73|origin|vc:FOOD-1319|obo:NCBITaxon_27697
+neg-73|name|"sardine","fresh fish","fish","fish and seafood","basic food","food"|"sardina pilchardus","clupeinae","clupeidae","clupeoidei","clupeiformes","otomorpha","clupeocephala","osteoglossocephalai","teleostei","neopterygii","actinopteri","actinopterygii","euteleostomi","gnathostomata <vertebrates>","vertebrata <vertebrates>","chordata","deuterostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-21|origin|vc:FOOD-1314|obo:NCBITaxon_6563
+neg-21|name|"oyster","freshmollusk","mollusc","fish and seafood","basic food","food"|"ostreidae","pteriomorphia","bivalvia","mollusca","protostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-35|origin|vc:FOOD-1322|obo:NCBITaxon_30948
+neg-35|name|"sole","fresh fish","fish","fish and seafood","basic food","food"|"soleidae","pleuronectoidei","pleuronectiformes","carangaria","percomorphaceae","euacanthomorphacea","acanthomorphata","eurypterygia","euteleosteomorpha","clupeocephala","osteoglossocephalai","teleostei","neopterygii","actinopteri","actinopterygii","euteleostomi","gnathostomata <vertebrates>","vertebrata <vertebrates>","chordata","deuterostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-32|origin|vc:VitaminB12|obo:FOODON_03413761
+neg-32|name|"vitamin b12","vitamin","nutrient"|"vitamin b12","vitamin b","vitamin and mineral dietary supplement","vitamin and mineral food supplement food product","food supplement food product","dietary or therapeutic formulation food product","processed food product","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-82|origin|vc:Salt|obo:CHEBI_24866
+neg-82|name|"salt","basic food","food"|"salt","heteroatomic molecular entity","polyatomic entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-73|origin|vc:FOOD-1319|obo:NCBITaxon_27697
+neg-73|name|"sardine","fresh fish","fish","fish and seafood","basic food","food"|"sardina pilchardus","clupeinae","clupeidae","clupeoidei","clupeiformes","otomorpha","clupeocephala","osteoglossocephalai","teleostei","neopterygii","actinopteri","actinopterygii","euteleostomi","gnathostomata <vertebrates>","vertebrata <vertebrates>","chordata","deuterostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-48-h|origin|vc:RECIPEFOOD-FOOD-312-10|obo:FOODON_03309709
+neg-48-h|name|"recipefood food 312 10","recipe food"|"eggplant (whole, raw)","eggplant food product","plant fruit vegetable food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-48-f|origin|vc:FOOD-334|obo:FOODON_03306692
+neg-48-f|name|"eggplant","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"cream pie filling","pie filling","food filling product","food component","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-198-h|origin|vc:Phenylalanine_50500|obo:NCIT_C80249
+neg-198-h|name|"phenylalanine 50500","phenylalanine","apolar aminoacid","aminoacid","nutrient"|"breakfast","meal","occurrent","entity"
+
+neg-198-f|origin|vc:Breakfast|obo:NCBITaxon_203262
+neg-198-f|name|"breakfast","meal"|"epinephelus tauvina","epinephelus","epinephelini","serranidae","perciformes","eupercaria","percomorphaceae","euacanthomorphacea","acanthomorphata","eurypterygia","euteleosteomorpha","clupeocephala","osteoglossocephalai","teleostei","neopterygii","actinopteri","actinopterygii","euteleostomi","gnathostomata <vertebrates>","vertebrata <vertebrates>","chordata","deuterostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-77-h|origin|vc:Lysine_77300|obo:FOODON_00002473
+neg-77-h|name|"lysine 77300","lysine","polar aminoacid","aminoacid","nutrient"|"apple (whole)","apple (whole or parts)","apple food product","pomaceous fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-77-f|origin|vc:FOOD-419|obo:IAO_0000577
+neg-77-f|name|"apples","fresh fruits","fruits","basic food","food"|"centrally registered identifier symbol","symbol","information content entity","generically dependent continuant","continuant","entity"
+
+neg-174-h|origin|vc:OleicAcid_058|obo:FOODON_03315498
+neg-174-h|name|"oleic acid 058","oleic acid","lipids","nutrient"|"dressing","food dressing product","food component","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-174-f|origin|vc:Dressing|obo:FOODON_03315287
+neg-174-f|name|"dressing","food"|"processed oil","oil","lipid food product","extract, concentrate or isolate of plant or animal","food component","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-49-h|origin|vc:VitaminB2_064|obo:FOODON_03301701
+neg-49-h|name|"vitamin b2 064","vitamin b2","vitamin","nutrient"|"apricot (whole, raw)","apricot (whole or parts)","apricot food product","stone fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-49-f|origin|vc:FOOD-401|obo:FOODON_03310345
+neg-49-f|name|"apricots","fresh fruits","fruits","basic food","food"|"piri piri","hot pepper spice food product","spice or herb","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-208-h|origin|vc:ACTIVITY-7025|obo:FOODON_03301719
+neg-208-h|name|"sitting, listening to music (not talking or reading) or watching a movie in a theater","inactivity","activity"|"peach (whole, raw)","peach (whole or parts)","peach food product","stone fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-208-f|origin|vc:FOOD-425|obo:GAZ_00005915
+neg-208-f|name|"peaches","fresh fruits","fruits","basic food","food"|"christmas island","australia","continents, regions and countries","geographic places and regions","material entity","independent continuant","continuant","entity"
+
+neg-150-h|origin|vc:OtherPolyunsaturatedLipid_095|obo:FOODON_00002801
+neg-150-h|name|"other polyunsaturated lipid 095","other polyunsaturated fat","lipids","nutrient"|"goose egg (whole, shell on, raw)","avian egg food product","egg food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-150-f|origin|vc:FOOD-1804|obo:FOODON_03541152
+neg-150-f|name|"goose egg","eggs","basic food","food"|"11520 - pine nut kernels and similar- (efsa foodex2)","11180 - tree nuts (efsa foodex2)","11170 - nuts, oilseeds and oilfruits (efsa foodex2)","10200 - legumes, nuts, oilseeds and spices (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-156-h|origin|vc:FOOD-8699|obo:FOODON_03411505
+neg-156-h|name|"turckey drumstick with skin","poultry with skin or poultry fatty meat","fatty white meat","white meat","meat","basic food","food"|"lobster","decapod","crustacean","shellfish","shellfish food product","seafood product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-156-f|origin|vc:FOOD-1303|obo:FOODON_03411336
+neg-156-f|name|"lobster","fresh shellfish","shellfish","fish and seafood","basic food","food"|"crambe plant","oil-producing plant","plant used for producing extract or concentrate","plant","food source","environmental material","fiat object part","material entity","independent continuant","continuant","entity"
+
+neg-92-h|origin|vc:VitaminA_31800|obo:FOODON_03301580
+neg-92-h|name|"vitamin a 31800","vitamin a","vitamin","nutrient"|"plum (whole, raw)","plum fruit food product","stone fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-92-f|origin|vc:FOOD-427|obo:NCBITaxon_238744
+neg-92-f|name|"plums","fresh fruits","fruits","basic food","food"|"menidia menidia","atherinopsidae","atheriniformes","atherinomorphae","ovalentaria","percomorphaceae","euacanthomorphacea","acanthomorphata","eurypterygia","euteleosteomorpha","clupeocephala","osteoglossocephalai","teleostei","neopterygii","actinopteri","actinopterygii","euteleostomi","gnathostomata <vertebrates>","vertebrata <vertebrates>","chordata","deuterostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-109-h|origin|vc:Potassium_12000|obo:FOODON_03310935
+neg-109-h|name|"potassium 12000","potassium","minerals","nutrient"|"taleggio cheese","soft cheese food product","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-109-f|origin|vc:FOOD-100031|obo:FOODON_03305502
+neg-109-f|name|"taleggio cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"ice milk mix","ice cow milk food product","mammalian ice milk food product","frozen dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-298-h|origin|vc:ACTIVITY-11121|obo:CHEBI_24898
+neg-298-h|name|"custodial work - vacuuming, light effort","occupation","activity"|"isoleucine","2-amino-3-methylpentanoic acid","branched-chain amino acid","amino acid","carboxylic acid","carbon oxoacid","oxoacid","hydroxides","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-298-f|origin|vc:Isoleucine|obo:FOODON_03301927
+neg-298-f|name|"isoleucine","apolar aminoacid","aminoacid","nutrient"|"bakery product dry mix","bakery product (mix)","bakery food product","food product by process","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-303-h|origin|vc:GlutamicAcid_294800|obo:FOODON_03302732
+neg-303-h|name|"glutamic acid 294800","glutamic acid","polar aminoacid","aminoacid","nutrient"|"cauliflower (whole, raw)","cauliflower vegetable food product","plant floret vegetable food product","vegetable food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-303-f|origin|vc:FOOD-313|obo:FOODON_03543655
+neg-303-f|name|"cauliflower","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"36550 - asian ginseng infusion roots (efsa foodex2)","36540 - ginseng infusion roots (efsa foodex2)","36530 - ginseng and similar- (efsa foodex2)","36300 - roots used for herbal infusions (efsa foodex2)","34030 - ingredients for coffee, cocoa, tea, and herbal infusions (efsa foodex2)","34020 - coffee, cocoa, tea and infusions (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-191-h|origin|vc:Alanine_116700|obo:FOODON_03420155
+neg-191-h|name|"alanine 116700","alanine","apolar aminoacid","aminoacid","nutrient"|"seed (anatomical part)","fruit part","fruit or seed","part of plant","part of plant or animal","material entity","independent continuant","continuant","entity"
+
+neg-191-f|origin|vc:Seeds|obo:FOODON_03542626
+neg-191-f|name|"seeds","nuts, seeds and olives","basic food","food"|"26260 - ling, dried (efsa foodex2)","26230 - stockfish (efsa foodex2)","26190 - dried fish (efsa foodex2)","26110 - processed or preserved fish (including processed offal) (efsa foodex2)","26100 - fish and seafood processed (efsa foodex2)","22110 - fish, seafood, amphibians, reptiles and invertebrates (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-123-h|origin|vc:OleicAcid_014|obo:FOODON_03302727
+neg-123-h|name|"oleic acid 014","oleic acid","lipids","nutrient"|"chicory (whole, raw)","chicory vegetable food product","vegetable food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-123-f|origin|vc:FOOD-319|obo:FOODON_03307748
+neg-123-f|name|"chicory","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"imitation tamale","imitation food (dish)","imitation food product","food product analog","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-20-h|origin|vc:RetinolEquivalent_38000|obo:FOODON_03301722
+neg-20-h|name|"retinol equivalent 38000","retinol equivalent","vitamin","nutrient"|"strawberry (whole, raw)","strawberry food product","berry food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-20-f|origin|vc:FOOD-411|obo:FOODON_03301459
+neg-20-f|name|"strawberries","fresh fruits","fruits","basic food","food"|"tomato powder","tomato substance","tomato food product","solanaceous fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-200-h|origin|vc:Iodine_6000|obo:FOODON_03315904
+neg-200-h|name|"iodine 6000","iodine","minerals","nutrient"|"sausage (formed)","sausage food product","processed meat food product","meat food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-200-f|origin|vc:Sausages|obo:CHEBI_25585
+neg-200-f|name|"sausages","sausages and cold cuts","basic food","food"|"nonmetal atom","atom","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-23-h|origin|vc:VitaminB6_016|obo:FOODON_03303502
+neg-23-h|name|"vitamin b6 016","vitamin b6","vitamin","nutrient"|"gorgonzola cheese","blue cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-23-f|origin|vc:FOOD-1713|obo:FOODON_03540511
+neg-23-f|name|"gorgonzola cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"05110 - sunflower shoots and sprouts (efsa foodex2)","04990 - sprouts, shoots and similar (efsa foodex2)","03580 - vegetables and vegetable products (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-226-h|origin|vc:Methionine_38600|obo:GENEPIO_0002752
+neg-226-h|name|"methionine 38600","methionine","apolar aminoacid","aminoacid","nutrient"|"chicken thigh","chicken meat food product","poultry meat food product","meat food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-226-f|origin|vc:FOOD-1092|obo:NCBITaxon_70846
+neg-226-f|name|"chicken thigh","skinned poultry lean meat","lean white meat","white meat","meat","basic food","food"|"uranoscopidae","uranoscopiformes","eupercaria","percomorphaceae","euacanthomorphacea","acanthomorphata","eurypterygia","euteleosteomorpha","clupeocephala","osteoglossocephalai","teleostei","neopterygii","actinopteri","actinopterygii","euteleostomi","gnathostomata <vertebrates>","vertebrata <vertebrates>","chordata","deuterostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-179-h|origin|vc:Phosphorus_18300|obo:FOODON_03304152
+neg-179-h|name|"phosphorus 18300","phosphorus","minerals","nutrient"|"sesame oil","sesame food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-179-f|origin|vc:FOOD-909|obo:FOODON_03302098
+neg-179-f|name|"sesame oil","vegetal oils","vegetal fats and oils","fats and oils","basic food","food"|"corned beef hash","cattle product stew or hash","animal-based stew or hash","stew or hash","prepared food product","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-236-h|origin|vc:Cholesterol_148000|obo:FOODON_03317393
+neg-236-h|name|"cholesterol 148000","cholesterol","lipids","nutrient"|"still wine","grape wine","grape based wine or wine-like food product","wine or wine-like food product","fruit based alcoholic beverage","alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-236-f|origin|vc:Wine|obo:FOODON_03301659
+neg-236-f|name|"wine","alcoholic beverages","beverages","basic food","food"|"cockle (frozen)","cockle food product","mollusc food product","shellfish food product","seafood product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-301-h|origin|vc:RECIPEFOOD-FOOD-805080-45|obo:FOODON_03311790
+neg-301-h|name|"recipefood food 805080 45","recipe food"|"persimmon (whole, raw)","persimmon food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-301-f|origin|vc:FOOD-415|obo:FOODON_03541543
+neg-301-f|name|"persimmons","fresh fruits","fruits","basic food","food"|"15430 - blackberries (efsa foodex2)","15420 - blackberries and similar- (efsa foodex2)","15410 - cane fruits (efsa foodex2)","15270 - berries and small fruits (efsa foodex2)","14220 - fruit used as fruit (efsa foodex2)","14210 - fruit and fruit products (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-288-h|origin|vc:Threonine_15100|obo:FOODON_03310387
+neg-288-h|name|"threonine 15100","threonine","polar aminoacid","aminoacid","nutrient"|"oil","lipid food product","extract, concentrate or isolate of plant or animal","food component","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-288-f|origin|vc:FOOD-9023|obo:FOODON_03306141
+neg-288-f|name|"oil","vegetal oils","vegetal fats and oils","fats and oils","basic food","food"|"shiso","spice or herb","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-83-h|origin|vc:Arginine_77300|obo:FOODON_03302360
+neg-83-h|name|"arginine 77300","arginine","polar aminoacid","aminoacid","nutrient"|"milk bread","bread loaf containing wheat","wheat bread food product","bread food product","wheat based food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-83-f|origin|vc:FOOD-60088|obo:NCBITaxon_4527
+neg-83-f|name|"milk bread","spercial bread","bread","cereal and grainproducts","basic food","food"|"oryza","oryzeae","bop clade","poaceae","poales","commelinids","petrosaviidae","liliopsida","mesangiospermae","magnoliopsida","spermatophyta","euphyllophyta","tracheophyta","viridiplantae","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-193-h|origin|vc:VegetableLipid_1290|obo:FOODON_03411258
+neg-193-h|name|"vegetable lipid 1290","vegetable lipids","lipids","nutrient"|"trout","salmo","salmonins","trout and salmon family","fish, salmoniform","fish, bony","fish","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-193-f|origin|vc:FOOD-1327|obo:FOODON_03302716
+neg-193-f|name|"trout","fresh fish","fish","fish and seafood","basic food","food"|"imitation hamburger pattie","meat product analog","food product analog","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-9-h|origin|vc:CarbsSoluble_950|obo:CHEBI_17234
+neg-9-h|name|"carbs soluble 950","soluble carbs","carbs","nutrient"|"glucose","aldohexose","aldose","monosaccharide","carbohydrate","carbohydrates and carbohydrate derivatives","organooxygen compound","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-9-f|origin|vc:Glucose|obo:FOODON_03541487
+neg-9-f|name|"glucose","carbs","nutrient"|"14870 - loquats and similar- (efsa foodex2)","14710 - pome fruits (efsa foodex2)","14220 - fruit used as fruit (efsa foodex2)","14210 - fruit and fruit products (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-246-h|origin|vc:Sodium_10900|obo:FOODON_00001276
+neg-246-h|name|"sodium 10900","sodium","minerals","nutrient"|"apple cider (alcoholic)","fermented apple beverage","apple beverage","pomaceous fruit juice beverage","fruit juice food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-246-f|origin|vc:FOOD-8057|obo:FOODON_03413154
+neg-246-f|name|"cider","alcoholic beverages","beverages","basic food","food"|"mixed carotenes","food additive","chemical food component","food component","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-62-h|origin|vc:RECIPE-171-185|obo:FOODON_00003202
+neg-62-h|name|"recipe 171 185","recipe","food"|"beverage","beverage food product","food product by meal type","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-62-f|origin|vc:Beverages|obo:FOODON_03542897
+neg-62-f|name|"beverages","basic food","food"|"28970 - cheese, fiore sardo (efsa foodex2)","28920 - extra hard cheese (parmesan, grana type) (efsa foodex2)","27910 - firm - ripened cheeses (efsa foodex2)","27580 - ripened cheese (efsa foodex2)","27310 - cheese (efsa foodex2)","26490 - milk and dairy products (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-235-h|origin|vc:Tyrosine_20000|obo:FOODON_03303206
+neg-235-h|name|"tyrosine 20000","tyrosine","polar aminoacid","aminoacid","nutrient"|"may wine","wine, 7-24% alcohol, food product","grape based wine or wine-like food product","wine or wine-like food product","fruit based alcoholic beverage","alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-235-f|origin|vc:FOOD-081|obo:FOODON_03305205
+neg-235-f|name|"wine","wine","alcoholic beverages","beverages","basic food","food"|"ham omelet mix (instant)","hen egg omelette mix","prepared hen egg product","hen egg food product","avian egg food product","egg food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-11-h|origin|vc:Arginine_10200|obo:FOODON_00001071
+neg-11-h|name|"arginine 10200","arginine","polar aminoacid","aminoacid","nutrient"|"grape must","grape beverage","grape fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-11-f|origin|vc:FOOD-428|obo:FOODON_03542221
+neg-11-f|name|"grapes","fresh fruits","fruits","basic food","food"|"22210 - silver carp (efsa foodex2)","22190 - carps (efsa foodex2)","22140 - carps, barbels and other cyprinids (efsa foodex2)","22130 - freshwater fish (efsa foodex2)","22120 - fish (meat) (efsa foodex2)","22110 - fish, seafood, amphibians, reptiles and invertebrates (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-285-h|origin|vc:RECIPEFOOD-FOOD-1151-75|obo:PO_0009001
+neg-285-h|name|"recipefood food 1151 75","recipe food"|"fruit","multi-tissue plant structure","plant structure","material entity","independent continuant","continuant","entity"
+
+neg-285-f|origin|vc:Fruits|obo:FOODON_03542091
+neg-285-f|name|"fruits","basic food","food"|"20910 - equine other slaughtering products (generic) (efsa foodex2)","20730 - mammals other slaughtering products (efsa foodex2)","20720 - animal other slaughtering products (efsa foodex2)","18760 - meat and meat products (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-42-h|origin|vc:Valine_63500|obo:FOODON_03306632
+neg-42-h|name|"valine 63500","valine","apolar aminoacid","aminoacid","nutrient"|"nut (whole or part)","nut food product","botanical fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-42-f|origin|vc:Nuts|obo:FOODON_03310593
+neg-42-f|name|"nuts","nuts, seeds and olives","basic food","food"|"raspberry (canned)","raspberry food product","berry food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-182-h|origin|vc:RECIPE-333-55|obo:FOODON_03310780
+neg-182-h|name|"recipe 333 55","recipe","food"|"cow whole milk 3.5% fat","cow whole milk (pasteurized)","cow milk (liquid)","cow milk based food product","cattle dairy food product","bovine dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-182-f|origin|vc:FOOD-1602|obo:FOODON_03307660
+neg-182-f|name|"whole cow milk","animal milk","milk and yogurt","milk and dairy products","basic food","food"|"tonic water","water based soft drink food product","soft drink food product","beverage food product","food product by meal type","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-162-h|origin|vc:VealFattyWhiteMeat|obo:FOODON_03316687
+neg-162-h|name|"veal fatty white meat","fatty white meat","white meat","meat","basic food","food"|"grape seed oil (edible)","grape fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-162-f|origin|vc:FOOD-911|obo:FOODON_03540799
+neg-162-f|name|"grape seed oil","vegetal oils","vegetal fats and oils","fats and oils","basic food","food"|"07990 - snow mushrooms (efsa foodex2)","07830 - cultivated fungi and similar- (efsa foodex2)","07820 - fungi (efsa foodex2)","07810 - fungi, mosses and lichens (efsa foodex2)","03580 - vegetables and vegetable products (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-144-h|origin|vc:VitaminB6_038|obo:FOODON_03301727
+neg-144-h|name|"vitamin b6 038","vitamin b6","vitamin","nutrient"|"celery stalk (raw)","celery vegetable food product","plant stem or spear vegetable food product","plant stem food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-144-f|origin|vc:FOOD-343|obo:FOODON_03412603
+neg-144-f|name|"celery","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"fusilier","fusilier family","fish, perciform","fish, bony","fish","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-110-h|origin|vc:PalmiticAcid_065|obo:FOODON_03303079
+neg-110-h|name|"palmitic acid 065","palmiticacid","lipids","nutrient"|"clementine (whole, raw)","mandarin orange food product","citrus fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-110-f|origin|vc:FOOD-416|obo:FOODON_03543875
+neg-110-f|name|"clementines","fresh fruits","fruits","basic food","food"|"38750 - cheese omelette (efsa foodex2)","38730 - egg based dishes (efsa foodex2)","38470 - dishes excluding pasta or rice dishes, sandwiches and pizza (efsa foodex2)","38460 - dishes, incl. ready to eat meals (excluding soups and salads) (efsa foodex2)","38450 - composite dishes (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-72-h|origin|vc:Chlorine_21000|obo:FOODON_03302340
+neg-72-h|name|"chlorine 21000","chlorine","minerals","nutrient"|"whole wheat flour","wheat flour food product","flour food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-72-f|origin|vc:WheatFour|obo:CHEBI_24471
+neg-72-f|name|"wheat flour","flour","cereal and grainproducts","basic food","food"|"halogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-278-h|origin|vc:Phosphorus_1200|obo:CHEBI_27266
+neg-278-h|name|"phosphorus 1200","phosphorus","minerals","nutrient"|"valine","branched-chain amino acid","amino acid","carboxylic acid","carbon oxoacid","oxoacid","hydroxides","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-278-f|origin|vc:Valine|obo:FOODON_03316433
+neg-278-f|name|"valine","apolar aminoacid","aminoacid","nutrient"|"bread (cut)","bread food product","wheat based food product","cereal grain food product","plant seed food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-37-h|origin|vc:Phosphorus_58000|obo:FOODON_03316424
+neg-37-h|name|"phosphorus 58000","phosphorus","minerals","nutrient"|"cod dried","cod food product","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-37-f|origin|vc:FOOD-1513|obo:FOODON_03315903
+neg-37-f|name|"dried cod","processed fish","fish","fish and seafood","basic food","food"|"goat milk (powdered, partly skimmed)","goat powdered milk food product","goat dairy food product","caprine dairy food product","bovine dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-124-h|origin|vc:FOOD-8672|obo:FOODON_03301283
+neg-124-h|name|"baked frozen trout","processed fish","fish","fish and seafood","basic food","food"|"raisin (whole)","grape fruit food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-124-f|origin|vc:FOOD-514|obo:FOODON_03317542
+neg-124-f|name|"raisins","dry fruits","fruits","basic food","food"|"milk product (flavored)","cow milk based food product","cattle dairy food product","bovine dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-222-h|origin|vc:RECIPEFOOD-FOOD-334-100|obo:FOODON_03310912
+neg-222-h|name|"recipefood food 334 100","recipe food"|"montasio cheese","cow milk cured cheese food product","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-222-f|origin|vc:FOOD-100019|obo:FOODON_03414861
+neg-222-f|name|"montasio cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"clarias catfish","labyrinth catfish family","fish, siluriform","fish, bony","fish","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-7-h|origin|vc:Lysine_159200|obo:FOODON_00003019
+neg-7-h|name|"lysine 159200","lysine","polar aminoacid","aminoacid","nutrient"|"shallot (whole, raw)","shallot food product","plant root vegetable food product","plant root food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-7-f|origin|vc:FOOD-19067|obo:FOODON_03544186
+neg-7-f|name|"shallot","fresh starchy free vegetables","starchy free vegetables","vegetables","vegetables and legumes","basic food","food"|"41860 - apple flavour (efsa foodex2)","41800 - flavourings (efsa foodex2)","41790 - food flavourings (efsa foodex2)","41530 - major isolated ingredients, additives, flavours, baking and processing aids (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-189-h|origin|vc:Iron_1960|obo:FOODON_00001579
+neg-189-h|name|"iron 1960","iron","minerals","nutrient"|"alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-189-f|origin|vc:AlcoholicBeverages|obo:FOODON_03542876
+neg-189-f|name|"alcoholic beverages","beverages","basic food","food"|"28760 - cheese, gruyere (efsa foodex2)","28670 - hard cheese (cheddar, emmental type) (efsa foodex2)","27910 - firm - ripened cheeses (efsa foodex2)","27580 - ripened cheese (efsa foodex2)","27310 - cheese (efsa foodex2)","26490 - milk and dairy products (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-225-h|origin|vc:RECIPEFOOD-FOOD-1313-225|obo:CHEBI_17579
+neg-225-h|name|"recipefood food 1313 225","recipe food"|"beta-carotene","vitamin a","retinoid","diterpenoid","terpenoid","isoprenoid","lipid","organic molecular entity","carbon group molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-225-f|origin|vc:BetaCarotene|obo:FOODON_03542841
+neg-225-f|name|"beta-carotene","vitamin","nutrient"|"28410 - cheese, piacentinu (efsa foodex2)","27920 - firm/semi-hard cheese (gouda and edam type) (efsa foodex2)","27910 - firm - ripened cheeses (efsa foodex2)","27580 - ripened cheese (efsa foodex2)","27310 - cheese (efsa foodex2)","26490 - milk and dairy products (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-95-h|origin|vc:Selenium_900|obo:FOODON_03310760
+neg-95-h|name|"selenium 900","selenium","minerals","nutrient"|"sherry","heavy wine, 14-24% alcohol, food product","wine, 7-24% alcohol, food product","grape based wine or wine-like food product","wine or wine-like food product","fruit based alcoholic beverage","alcoholic beverage","plant derived fermented beverage","plant derived beverage","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-95-f|origin|vc:FOOD-8058|obo:CHEBI_26078
+neg-95-f|name|"sherry","spirits and liquor","alcoholic beverages","beverages","basic food","food"|"phosphoric acid","phosphoric acids","phosphorus oxoacid","pnictogen oxoacid","oxoacid","hydroxides","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-276-h|origin|vc:Threonine_21400|obo:FOODON_03411514
+neg-276-h|name|"threonine 21400","threonine","polar aminoacid","aminoacid","nutrient"|"octopus","cephalopod","mollusc","shellfish","shellfish food product","seafood product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-276-f|origin|vc:FOOD-1316|obo:NCBITaxon_143309
+neg-276-f|name|"octopus","freshmollusk","mollusc","fish and seafood","basic food","food"|"saurida","harpadontinae","synodontidae","aulopoidei","aulopiformes","eurypterygia","euteleosteomorpha","clupeocephala","osteoglossocephalai","teleostei","neopterygii","actinopteri","actinopterygii","euteleostomi","gnathostomata <vertebrates>","vertebrata <vertebrates>","chordata","deuterostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-267-h|origin|vc:RECIPE-262-100|obo:FOODON_03311604
+neg-267-h|name|"recipe 262 100","recipe","food"|"black currant (whole, raw)","black currant food product","currant food product","berry food product","plant fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-267-f|origin|vc:FOOD-500025|obo:FOODON_03305337
+neg-267-f|name|"blackcurrants","fresh fruits","fruits","basic food","food"|"gravy mix (italian-style, dry)","gravy mix (dry)","plant based gravy or sauce food product","gravy or sauce","food (cooked)","food product by process","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-284-h|origin|vc:ACTIVITY-20010|obo:FOODON_00002425
+neg-284-h|name|"sitting, reading religious materials at home","religious activities","activity"|"stracchino cheese","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-284-f|origin|vc:FOOD-1725|obo:NCBITaxon_7781
+neg-284-f|name|"stracchino cheese","fresh cheese","cheese","milk and dairy products","basic food","food"|"raja clavata","raja","rajidae","rajiformes","batoidea","elasmobranchii","chondrichthyes","gnathostomata <vertebrates>","vertebrata <vertebrates>","chordata","deuterostomia","bilateria","opisthokonta","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-265-h|origin|vc:Starch_8010|obo:CHEBI_16811
+neg-265-h|name|"starch 8010","starch","carbs","nutrient"|"methionine","sulfur-containing amino acid","sulfur-containing carboxylic acid","organosulfur compound","sulfur molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-265-f|origin|vc:Methionine|obo:FOODON_03541320
+neg-265-f|name|"methionine","apolar aminoacid","aminoacid","nutrient"|"13200 - other spices seeds (e) (efsa foodex2)","12900 - seed spices (efsa foodex2)","12590 - spices (efsa foodex2)","10200 - legumes, nuts, oilseeds and spices (efsa foodex2)","efsa food classification and description system for exposure assessment (efsa foodex2)","product type, european union","food product type","material entity","independent continuant","continuant","entity"
+
+neg-76-h|origin|vc:VitaminB6_033|obo:CHEBI_17992
+neg-76-h|name|"vitamin b6 033","vitamin b6","vitamin","nutrient"|"sucrose","glycosyl glycoside","disaccharide","oligosaccharide","carbohydrate","carbohydrates and carbohydrate derivatives","organooxygen compound","oxygen molecular entity","chalcogen molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-76-f|origin|vc:Sucrose|obo:FOODON_03310443
+neg-76-f|name|"sucrose","carbs","nutrient"|"black cherry yogurt","yogurt with fruit","yogurt food product","fermented dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-38-h|origin|vc:Valine_73200|obo:CHEBI_37445
+neg-38-h|name|"valine 73200","valine","apolar aminoacid","aminoacid","nutrient"|"folic acids","pterins","pteridines","organic heterobicyclic compound","heterobicyclic compound","bicyclic compound","cyclic compound","molecule","polyatomic entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-38-f|origin|vc:FolicAcid|obo:NCBITaxon_346985
+neg-38-f|name|"folic acid","vitamin","nutrient"|"senna obtusifolia","senna","cassia clade","caesalpinioideae","fabaceae","fabales","fabids","rosids","pentapetalae","mesangiospermae","magnoliopsida","spermatophyta","euphyllophyta","tracheophyta","viridiplantae","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-79-h|origin|vc:VegetableLipid_340|obo:FOODON_00003043
+neg-79-h|name|"vegetable lipid 340","vegetable lipids","lipids","nutrient"|"saffron food product","spice or herb","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-79-f|origin|vc:FOOD-8019|obo:FOODON_03400438
+neg-79-f|name|"saffron","spices","basic food","food"|"residue (codex)","codex alimentarius food additive functional class","food additive regulatory classification","food product type","material entity","independent continuant","continuant","entity"
+
+neg-202-h|origin|vc:Calcium_83000|obo:CHEBI_18059
+neg-202-h|name|"calcium 83000","calcium","minerals","nutrient"|"lipid","organic molecular entity","carbon group molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-202-f|origin|vc:Lipid|obo:FOODON_03401760
+neg-202-f|name|"lipids","nutrient"|"10005935 - pineapples (gs1 gpc)","50251100 - pineapples (gs1 gpc)","50250000 - fruits - unprepared/unprocessed (fresh) (gs1 gpc)","50101600 - fruit - unprepared/unprocessed (gs1 gpc)","gs1 global product classification (gpc)","product type, international","food product type","material entity","independent continuant","continuant","entity"
+
+neg-221-h|origin|vc:RECIPEFOOD-FOOD-3000-10|obo:FOODON_03411222
+neg-221-h|name|"recipefood food 3000 10","recipe food"|"fish","fish food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-221-f|origin|vc:Fish|obo:hancestro_0446
+neg-221-f|name|"fish","fish and seafood","basic food","food"|"palestinian","middle eastern/north african","ancestral group","information content entity","generically dependent continuant","continuant","entity"
+
+neg-190-h|origin|vc:RECIPE-81-215|obo:FOODON_03301000
+neg-190-h|name|"recipe 81 215","recipe","food"|"starch","starch refined food product","plant based refined or partially-refined food product","refined or partially-refined food product","processed food product","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-190-f|origin|vc:FOOD-100143|obo:NCBITaxon_24663
+neg-190-f|name|"starch","wheat flour","flour","cereal and grainproducts","basic food","food"|"physalis","physaleae","solanoideae","solanaceae","solanales","lamiids","asterids","pentapetalae","mesangiospermae","magnoliopsida","spermatophyta","euphyllophyta","tracheophyta","viridiplantae","eukaryota","organism","material entity","independent continuant","continuant","entity"
+
+neg-152-h|origin|vc:MyristicAcid_233|obo:CHEBI_7916
+neg-152-h|name|"myristic acid 233","myristic acid","lipids","nutrient"|"pantothenic acid","pantothenic acids","beta-alanine derivative","non-proteinogenic amino acid derivative","amino acid derivative","organonitrogen compound","heteroorganic entity","organic molecular entity","carbon group molecular entity","p-block molecular entity","main group molecular entity","molecular entity","chemical entity","material entity","independent continuant","continuant","entity"
+
+neg-152-f|origin|vc:PantothenicAcid|obo:FOODON_03460212
+neg-152-f|name|"pantothenic acid","vitamin","nutrient"|"obsolete: vegetable added","obsolete class"
+
+neg-185-h|origin|vc:Glycine_72900|obo:FOODON_00003258
+neg-185-h|name|"glycine 72900","glycine","apolar aminoacid","aminoacid","nutrient"|"strained yogurt","yogurt food product","fermented dairy food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-185-f|origin|vc:FOOD-8053|obo:FOODON_03301367
+neg-185-f|name|"greek yogurt","yogurt","milk and yogurt","milk and dairy products","basic food","food"|"nuts (mixed)","nut (whole or part)","nut food product","botanical fruit food product","plant food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-169-h|origin|vc:RECIPE-378-220|obo:FOODON_03302995
+neg-169-h|name|"recipe 378 220","recipe","food"|"camembert cheese","soft cheese food product","cow milk cheese","bovine cheese food product","cheese food product","dairy food product","vertebrate animal food product","food product by organism","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
+neg-169-f|origin|vc:FOOD-71786|obo:FOODON_03303755
+neg-169-f|name|"camembert cheese","aged cheese","cheese","milk and dairy products","basic food","food"|"milk chocolate (vitamin- and mineral-fortified)","chocolate candy food product","candy food product","confectionery food product","food (cooked)","food product by process","foodon product type","food product type","material entity","independent continuant","continuant","entity"
+
