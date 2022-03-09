@@ -5,7 +5,7 @@ import numpy as np
 from gensim.models.word2vec import Word2Vec
 from nltk.tokenize import word_tokenize
 
-from scripts.lib.Label import parse_uri_name
+from .Label import parse_uri_name
 
 
 def to_words(item: str) -> List[str]:
@@ -45,7 +45,7 @@ def path_encoder_word_avg(name_path, wv_model):
     return avg
 
 
-def path_encoder_class_con(path, class_num, wv_model) -> np.array:
+def path_encoder_class_concat(path, class_num, wv_model) -> np.array:
     wv_dim = wv_model.vector_size
     path = (
         path[0:class_num]
@@ -65,73 +65,75 @@ def load_samples(mappings, left_wv_model: Word2Vec, right_wv_model: Word2Vec):
     left_wv_dim = left_wv_model.vector_size
     right_wv_dim = right_wv_model.vector_size
 
+    # `mappings` contains 3 lines per map (original + name + empty), thus the total number of mappings are:
     num = int(len(mappings) / 3)
 
-    # Path type is set to 'uri+label' (the uri name and label of the class).
-    X1 = np.zeros((num, 3, left_wv_dim))
+    X1 = np.zeros((num, 3, left_wv_dim))  # one Set per mapping, 3 rows per set, `left_wv_dim` columns
     X2 = np.zeros((num, 3, right_wv_dim))
     Y = np.zeros((num, 2))
 
     for i in range(0, len(mappings), 3):
-        name_mapping = mappings[i + 1]
-        tmp = name_mapping.split("|")
+        class_mapping = mappings[i].split("|")
+        left_c, right_c = class_mapping[2], class_mapping[3]
 
-        p1 = [x for x in list(csv.reader([tmp[2]], delimiter=",", quotechar='"'))[0]]
-        p2 = [x for x in list(csv.reader([tmp[3]], delimiter=",", quotechar='"'))[0]]
+        name_mapping = mappings[i + 1].split("|")
+        p1 = [x for x in list(csv.reader([name_mapping[2]], delimiter=",", quotechar='"'))[0]]
+        p2 = [x for x in list(csv.reader([name_mapping[3]], delimiter=",", quotechar='"'))[0]]
 
-        mapping = mappings[i].strip().split("|")
-        left_c, right_c = mapping[2], mapping[3]
-
+        # Path type is 'uri+label', so we want to construct the class path using the URI name and labels.
         p1 = [left_c.split(":")[1]] + p1
         p2 = [right_c.split(":")[1]] + p2
 
         j = int(i / 3)
 
         # Embeds a path by concatenating the embeddings of its classes.
-        X1[j] = path_encoder_class_con(
+        X1[j] = path_encoder_class_concat(
             path=p1,
             wv_model=left_wv_model,
             class_num=3,
         )
-        X2[j] = path_encoder_class_con(
+        X2[j] = path_encoder_class_concat(
             path=p2,
             wv_model=right_wv_model,
             class_num=3,
         )
         Y[j] = (
-            np.array([1.0, 0.0]) if tmp[0].startswith("neg") else np.array([0.0, 1.0])
+            np.array([1.0, 0.0]) if name_mapping[0].startswith("neg") else np.array([0.0, 1.0])
         )
 
     return X1, X2, Y, num
 
 
-def to_samples(mappings, mappings_n, left_wv_model: Word2Vec, right_wv_model: Word2Vec):
+def to_samples(mappings, mappings_names, left_wv_model: Word2Vec, right_wv_model: Word2Vec):
+    # TODO - Can we use `load_samples()`?
     left_wv_dim = left_wv_model.vector_size
     right_wv_dim = right_wv_model.vector_size
 
-    num = len(mappings_n)
+    num = len(mappings)
 
     X1 = np.zeros((num, 3, left_wv_dim))
     X2 = np.zeros((num, 3, right_wv_dim))
 
     for i in range(num):
-        tmp = mappings_n[i].split("|")
-        p1 = [x for x in list(csv.reader([tmp[0]], delimiter=",", quotechar='"'))[0]]
-        p2 = [x for x in list(csv.reader([tmp[1]], delimiter=",", quotechar='"'))[0]]
 
-        tmp = mappings[i].split("|")
-        left_c, right_c = tmp[1], tmp[2]
+        class_mapping = mappings[i].split("|")
+        left_c, right_c = class_mapping[2], class_mapping[3]
 
+        name_mapping = mappings_names[i].split("|")
+        p1 = [x for x in list(csv.reader([name_mapping[2]], delimiter=",", quotechar='"'))[0]]
+        p2 = [x for x in list(csv.reader([name_mapping[3]], delimiter=",", quotechar='"'))[0]]
+
+        # Path type is 'uri+label', so we want to construct the class path using the URI name and labels.
         p1 = [left_c.split(":")[1]] + p1
         p2 = [right_c.split(":")[1]] + p2
 
         # Embeds a path by concatenating the embeddings of its classes.
-        X1[i] = path_encoder_class_con(
+        X1[i] = path_encoder_class_concat(
             path=p1,
             wv_model=left_wv_model,
             class_num=3,
         )
-        X2[i] = path_encoder_class_con(
+        X2[i] = path_encoder_class_concat(
             path=p2,
             wv_model=right_wv_model,
             class_num=3,

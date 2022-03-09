@@ -1,6 +1,5 @@
 import argparse
 import json
-from datetime import datetime
 from pathlib import Path
 
 from gensim.models import Word2Vec
@@ -33,16 +32,16 @@ parser.add_argument(
     help="Path to pre-extracted class names of each class.",
 )
 parser.add_argument(
-    "--left_w2v_dir",
+    "--left_w2v",
     type=Path,
     default="w2v/",
-    help="OWL2Vec or Word2Vec of the left ontology",
+    help="Path to OWL2Vec or Word2Vec model of the left ontology",
 )
 parser.add_argument(
-    "--right_w2v_dir",
+    "--right_w2v",
     type=Path,
     default="w2v/",
-    help="OWL2Vec or Word2Vec of the right ontology",
+    help="Path to OWL2Vec or Word2Vec model of the right ontology",
 )
 parser.add_argument(
     "--keep_uri",
@@ -54,7 +53,7 @@ parser.add_argument(
     "--nn_dir",
     type=Path,
     default=Path("model"),
-    help="Path for the output models.",
+    help="Path for the inputs models.",
 )
 
 # Read arguments from the command line.
@@ -79,8 +78,7 @@ if __name__ == "__main__":
     with open(args.candidates, "r") as infile:
         candidates = infile.readlines()
 
-    # TODO - Comment.
-    mappings, mappings_n = [], []
+    mappings, mappings_names = [], []
 
     for i, line in enumerate(candidates):
         m = line.strip().split(", ")[1] if ", " in line else line.strip()
@@ -97,23 +95,23 @@ if __name__ == "__main__":
         )
         l2 = get_label(
             cls=c2,
-            paths=left_paths,
-            names=left_names,
+            paths=right_paths,
+            names=right_names,
             keep_uri=args.keep_uri,
         )
 
-        origin = "i=%d|%s|%s" % (i + 1, c1, c2)
-        name = "%s|%s" % (l1, l2)
+        origin = "%d|origin|%s|%s" % (i + 1, c1, c2)
+        name = "%d|name|%s|%s" % (i + 1, l1, l2)
 
         mappings.append(origin)
-        mappings_n.append(name)
+        mappings_names.append(name)
 
     left_wv_model = Word2Vec.load(str(args.left_w2v))
     right_wv_model = Word2Vec.load(str(args.right_w2v))
 
     X1, X2 = to_samples(
         mappings=mappings,
-        mappings_n=mappings_n,
+        mappings_names=mappings_names,
         left_wv_model=left_wv_model,
         right_wv_model=right_wv_model,
     )
@@ -124,5 +122,5 @@ if __name__ == "__main__":
     with open("prediction.txt", "w") as f:
         for i, mapping in enumerate(mappings):
             f.write("%s|%.3f\n" % (mapping, test_scores[i]))
-            f.write("%s\n" % mappings_n[i])
+            f.write("%s\n" % mappings_names[i])
             f.write("\n")

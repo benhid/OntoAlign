@@ -14,13 +14,6 @@ parser.add_argument(
     default="logmap_output/logmap_anchors.txt",
     help="Path to the LogMap anchors file.",
 )
-parser.add_argument(
-    "--train_rate",
-    type=float,
-    default=1.0,
-    help="Can be set to 1.0 (to use all the seeds as the training set and 20% of them as the validation set)"
-    "or a float smaller than 1.0 (where train_rate of all the samples are used as the training set and the remaining are used as the validation set).",
-)
 parser.add_argument("--sample_duplicate", type=int, default=2)
 parser.add_argument(
     "--left_paths", type=Path, help="Path to pre-extracted paths of each class."
@@ -43,6 +36,13 @@ parser.add_argument(
     default=False,
     action=argparse.BooleanOptionalAction,
     help="Set it to keep URI in the sample instead of using the path labels.",
+)
+parser.add_argument(
+    "--train_rate",
+    type=float,
+    default=1.0,
+    help="Can be set to 1.0 (to use all the seeds as the training set and 20% of them as the validation set)"
+    "or a float smaller than 1.0 (where train_rate of all the samples are used as the training set and the remaining are used as the validation set).",
 )
 parser.add_argument(
     "--anchor_branch_conflict",
@@ -92,7 +92,7 @@ def negative_sampling(
     from the left ontology, and we generate a second negative sample replacing c2 with a class randomly selected
     from the right ontology.
 
-    TODO - donde "Note that the random replacements could produce positive samples from Ms; we discard any such negative samples."?
+    TODO - "Note that the random replacements could produce positive samples from Ms; we discard any such negative samples."?
     """
     neg_mappings = []
 
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     with open(args.right_paths, "r") as infile:
         right_paths = [line.strip().split(",") for line in infile.readlines()]
 
-    # Reading LogMap anchors.
+    # Reading initial set of candidate mappings (anchors).
     with open(args.anchors, "r") as infile:
         anchors = infile.readlines()
 

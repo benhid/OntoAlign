@@ -59,7 +59,7 @@ def siamese_nn_train(
 
             # Checkpoint directory.
             checkpoint_dir = nn_dir / "checkpoints"
-            checkpoint_dir.mkdir(exist_ok=True)
+            checkpoint_dir.mkdir(parents=True, exist_ok=True)
 
             checkpoint_prefix = checkpoint_dir / "model"
 
@@ -118,10 +118,10 @@ def siamese_nn_train(
                 train_x2_all=train_x2,
                 train_y_all=y_train,
             )
-            saver.save(sess, checkpoint_prefix, global_step=current_step)
+            saver.save(sess, save_path=str(checkpoint_prefix), global_step=current_step)
 
 
-def siamese_nn_predict(test_x1, test_x2, nn_dir: Path = Path(".")):
+def siamese_nn_predict(test_x1, test_x2, nn_dir: Path):
     """
     Predict with a trained neural network.
 

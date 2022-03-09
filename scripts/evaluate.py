@@ -10,9 +10,6 @@ Output Precision, Recall and F1 Score
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--prediction_out_file", type=str, default="FMA-NCI-small/predict_score.txt"
-)
-parser.add_argument(
     "--oaei_GS_file",
     type=str,
     default="FMA-NCI-small/oaei_FMA2NCI_UMLS_mappings_with_flagged_repairs.rdf",

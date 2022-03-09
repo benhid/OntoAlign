@@ -24,16 +24,16 @@ parser.add_argument(
     help="path as input: 31 for FoodOn, 7 for Conference; class as input (--path_type=label): 1",
 )
 parser.add_argument(
-    "--left_w2v_dir",
+    "--left_w2v",
     type=Path,
     default="w2v/",
-    help="OWL2Vec or Word2Vec of the left ontology",
+    help="Path to OWL2Vec or Word2Vec model of the left ontology",
 )
 parser.add_argument(
-    "--right_w2v_dir",
+    "--right_w2v",
     type=Path,
     default="w2v/",
-    help="OWL2Vec or Word2Vec of the right ontology",
+    help="Path to OWL2Vec or Word2Vec model of the right ontology",
 )
 parser.add_argument(
     "--nn_dir",
@@ -90,6 +90,7 @@ if __name__ == "__main__":
         return max_alpha, max_valid_f1, max_valid_p, max_valid_r, max_valid_acc
 
     train(X1=train_X1, X2=train_X2, Y=train_Y, nn_dir=args.nn_dir)
+
     threshold, f1, p, r, acc = valid(
         X1=valid_X1, X2=valid_X2, Y=valid_Y, nn_dir=args.nn_dir
     )
