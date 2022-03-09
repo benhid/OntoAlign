@@ -19,13 +19,13 @@ def get_class_names(cls) -> List[str]:
     Get the URI name and english label for each class.
     """
     name = cls.name
-    labels = c.label.en + c.label  # concatenate lists
+    labels = cls.label.en + cls.label  # concatenate lists
     return [name, labels[0] if labels else None]
 
 
-def super_classes(cls) -> List[str]:
+def super_classes(cls) -> List[EntityClass]:
     sc = []
-    for sup_class in c.is_a:
+    for sup_class in cls.is_a:
         if type(sup_class) == entity.ThingClass:
             sc.append(sup_class)
     return sc
@@ -35,7 +35,7 @@ def append_super_class(cls, p):
     """
     Recursive function.
     """
-    p.append(replace_with_prefix(uri=c.iri))
+    p.append(replace_with_prefix(uri=cls.iri))
     sup_classes = super_classes(cls=cls)
     if owl.Thing in sup_classes or not sup_classes:
         return p
