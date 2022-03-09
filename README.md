@@ -84,7 +84,7 @@ in the corresponding ontologies
 and 
 <img src="https://render.githubusercontent.com/render/math?math=\mathcal{O}_2">.
 
-### Step #2: Train, Valid and Predict - TODO
+### Step #2: Train, Valid and Predict
 
 We train a Siamese Neural Network (SiamNN) as the mapping prediction model:
 
