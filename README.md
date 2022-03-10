@@ -48,7 +48,7 @@ The ontologies can use their own embedding models or use one common embedding mo
 This is to extract the class name and path information for each class in an ontology:
 
 ```sh
-$ python scripts/extraction.py data/helis_v1.00.owl
+$ python extraction.py data/cmt.owl
 ```
 
 It should be executed separately for both _to-be-aligned_ ontologies 
@@ -63,7 +63,7 @@ This is to generate high-confidence train mappings
 for training:
 
 ```sh
-$ python scripts/sample.py data/logmap_output/logmap_anchors.txt --left_names data/helis_v1.00_names.json --left_paths data/helis_v1.00_paths.txt --right_names data/foodon-merged_names.json --right_paths data/foodon-merged_paths.txt
+$ python sample.py data/logmap_output/logmap_anchors.txt --left_names data/cmt_names.json --left_paths data/cmt_paths.txt --right_names data/sigkdd_names.json --right_paths data/sigkdd_paths.txt
 ```
 
 A set of class disjointness constraints (branch conflicts) denoted
@@ -89,20 +89,22 @@ and
 We train a Siamese Neural Network (SiamNN) as the mapping prediction model:
 
 ```sh
-$ python scripts/train_valid.py --left_w2v enwiki_model/word2vec_gensim --right_w2v enwiki_model/word2vec_gensim --train_mappings data/train_mappings.txt --valid_mappings data/validation_mappings.txt --nn_dir data/model
+$ python train_valid.py --left_w2v enwiki_model/word2vec_gensim --right_w2v enwiki_model/word2vec_gensim --train_mappings data/train_mappings.txt --valid_mappings data/validation_mappings.txt --nn_dir data/model
 ```
 
 Finally, we can compute the output mappings starting from a set of high recall candidate mappings (LogMap’s over-estimation mappings) to reduce the search space:
 
 ```sh
-$ python scripts/predict_candidates.py data/logmap_output/logmap_overestimation.txt --left_w2v enwiki_model/word2vec_gensim --right_w2v enwiki_model/word2vec_gensim --left_names data/helis_v1.00_names.json --left_paths data/helis_v1.00_paths.txt --right_names data/foodon-merged_names.json --right_paths data/foodon-merged_paths.txt --nn_dir data/model
+$ python predict_candidates.py data/logmap_output/logmap_overestimation.txt --left_w2v enwiki_model/word2vec_gensim --right_w2v enwiki_model/word2vec_gensim --left_names data/cmt_names.json --left_paths data/cmt_paths.txt --right_names data/sigkdd_names.json --right_paths data/sigkdd_paths.txt --nn_dir data/model
 ```
 
 ### Step #3: Evaluate
 
 Assuming that gold standards (complete ground truth mappings) are given, Precision and Recall can be directly calculated by:
 
-TODO
+```sh
+$ python evaluate.py --oaei_GS data/cmt-sigkdd.rdf --anchors data/logmap_output/logmap_anchors.txt --prediction data/prediction.txt
+```
 
 ## Publications
 

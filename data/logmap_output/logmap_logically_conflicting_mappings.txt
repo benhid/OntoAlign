@@ -1,0 +1,4 @@
+http://cmt#ProgramCommittee|http://sigkdd#Program_Chair|<|0.7|CLS
+http://cmt#PaperFullVersion|http://sigkdd#Author_of_paper|>|0.7|CLS
+http://cmt#PaperAbstract|http://sigkdd#Author_of_paper|<|0.7|CLS
+http://cmt#Reviewer|http://sigkdd#Review|>|0.7|CLS

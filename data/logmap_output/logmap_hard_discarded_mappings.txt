@@ -1,0 +1,12 @@
+http://cmt#ConferenceMember|http://sigkdd#Conference_hall|=|0.33|CLS
+http://cmt#ProgramCommittee|http://sigkdd#Organizing_Committee|=|0.7|CLS
+http://cmt#ProgramCommittee|http://sigkdd#Committee|=|0.7|CLS
+http://cmt#PaperAbstract|http://sigkdd#Abstract|=|0.72|CLS
+http://cmt#AuthorNotReviewer|http://sigkdd#Deadline_Author_notification|=|0.1|CLS
+http://cmt#ConferenceChair|http://sigkdd#Conference_hall|=|0.35|CLS
+http://cmt#ProgramCommitteeMember|http://sigkdd#Organizing_Committee_member|=|0.7|CLS
+http://cmt#ConferenceChair|http://sigkdd#General_Chair|=|0.25|CLS
+http://cmt#AssociatedChair|http://sigkdd#General_Chair|=|0.25|CLS
+http://cmt#ProgramCommitteeChair|http://sigkdd#Program_Committee_member|=|0.7|CLS
+http://cmt#ConferenceChair|http://sigkdd#Program_Chair|=|0.25|CLS
+http://cmt#AssociatedChair|http://sigkdd#Program_Chair|=|0.25|CLS

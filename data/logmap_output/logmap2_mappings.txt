@@ -1,0 +1,11 @@
+http://cmt#Author|http://sigkdd#Author|=|0.77|CLS
+http://cmt#ProgramCommittee|http://sigkdd#Program_Committee|=|0.7|CLS
+http://cmt#Document|http://sigkdd#Document|=|0.96|CLS
+http://cmt#Review|http://sigkdd#Review|=|0.9|CLS
+http://cmt#ProgramCommitteeMember|http://sigkdd#Program_Committee_member|=|0.82|CLS
+http://cmt#Conference|http://sigkdd#Conference|=|0.7|CLS
+http://cmt#ProgramCommitteeChair|http://sigkdd#Program_Chair|=|0.72|CLS
+http://cmt#Paper|http://sigkdd#Paper|=|0.85|CLS
+http://cmt#Person|http://sigkdd#Person|=|0.78|CLS
+http://cmt#email|http://sigkdd#E-mail|=|1.0|DPROP
+http://cmt#submitPaper|http://sigkdd#submit|=|0.82|OPROP

@@ -10,8 +10,13 @@ clean:
 	@find . -type d -name '__pycache__' -exec rm -rf {} +
 
 black: clean
-	@isort --profile black scripts/
-	@black scripts/
+	@isort --profile black *.py lib tests
+	@black *.py lib tests
 
 lint:
-	@mypy scripts/ --show-error-codes
+	@mypy *.py lib tests --show-error-codes
+
+.PHONY: tests
+
+tests:
+	@python -m pytest -s

@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(http://sigkdd)#"
+     xml:base="Optional.of(http://sigkdd)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(http://sigkdd)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sigkdd#can_stay_in -->
+
+    <owl:ObjectProperty rdf:about="http://sigkdd#can_stay_in">
+        <rdfs:domain rdf:resource="http://sigkdd#Person"/>
+        <rdfs:range rdf:resource="http://sigkdd#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sigkdd#notification_until -->
+
+    <owl:ObjectProperty rdf:about="http://sigkdd#notification_until">
+        <rdfs:domain rdf:resource="http://sigkdd#Author"/>
+        <rdfs:range rdf:resource="http://sigkdd#Deadline_Author_notification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sigkdd#pay -->
+
+    <owl:ObjectProperty rdf:about="http://sigkdd#pay">
+        <owl:inverseOf rdf:resource="http://sigkdd#payed_by"/>
+        <rdfs:domain rdf:resource="http://sigkdd#Person"/>
+        <rdfs:range rdf:resource="http://sigkdd#Registration_fee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sigkdd#payed_by -->
+
+    <owl:ObjectProperty rdf:about="http://sigkdd#payed_by">
+        <rdfs:domain rdf:resource="http://sigkdd#Registration_fee"/>
+        <rdfs:range rdf:resource="http://sigkdd#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sigkdd#presentation -->
+
+    <owl:ObjectProperty rdf:about="http://sigkdd#presentation">
+        <owl:inverseOf rdf:resource="http://sigkdd#presentationed_by"/>
+        <rdfs:domain rdf:resource="http://sigkdd#Speaker"/>
+        <rdfs:range rdf:resource="http://sigkdd#Document"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sigkdd#presentationed_by -->
+
+    <owl:ObjectProperty rdf:about="http://sigkdd#presentationed_by">
+        <rdfs:domain rdf:resource="http://sigkdd#Document"/>
+        <rdfs:range rdf:resource="http://sigkdd#Speaker"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sigkdd#submit -->
+
+    <owl:ObjectProperty rdf:about="http://sigkdd#submit">
+        <rdfs:domain rdf:resource="http://sigkdd#Author"/>
+        <rdfs:range rdf:resource="http://sigkdd#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sigkdd#submit_until -->
+
+    <owl:ObjectProperty rdf:about="http://sigkdd#submit_until">
+        <rdfs:domain rdf:resource="http://sigkdd#Document"/>
+        <rdfs:range rdf:resource="http://sigkdd#Deadline"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sigkdd#Author -->
+
+    <owl:Class rdf:about="http://sigkdd#Author">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sigkdd#submit"/>
+                <owl:someValuesFrom rdf:resource="http://sigkdd#Paper"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Speaker"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sigkdd#notification_until"/>
+                <owl:someValuesFrom rdf:resource="http://sigkdd#Deadline_Author_notification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Committee -->
+
+    <owl:Class rdf:about="http://sigkdd#Committee"/>
+    
+
+
+    <!-- http://sigkdd#Conference -->
+
+    <owl:Class rdf:about="http://sigkdd#Conference"/>
+    
+
+
+    <!-- http://sigkdd#Deadline -->
+
+    <owl:Class rdf:about="http://sigkdd#Deadline"/>
+    
+
+
+    <!-- http://sigkdd#Deadline_Author_notification -->
+
+    <owl:Class rdf:about="http://sigkdd#Deadline_Author_notification">
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Deadline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Deadline_Paper_Submission -->
+
+    <owl:Class rdf:about="http://sigkdd#Deadline_Paper_Submission">
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Deadline"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Document -->
+
+    <owl:Class rdf:about="http://sigkdd#Document"/>
+    
+
+
+    <!-- http://sigkdd#Fee -->
+
+    <owl:Class rdf:about="http://sigkdd#Fee"/>
+    
+
+
+    <!-- http://sigkdd#Hotel -->
+
+    <owl:Class rdf:about="http://sigkdd#Hotel">
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Organizator -->
+
+    <owl:Class rdf:about="http://sigkdd#Organizator">
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Paper -->
+
+    <owl:Class rdf:about="http://sigkdd#Paper">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sigkdd#submit_until"/>
+                <owl:someValuesFrom rdf:resource="http://sigkdd#Deadline_Paper_Submission"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Person -->
+
+    <owl:Class rdf:about="http://sigkdd#Person">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sigkdd#pay"/>
+                <owl:someValuesFrom rdf:resource="http://sigkdd#Registration_fee"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sigkdd#can_stay_in"/>
+                <owl:someValuesFrom rdf:resource="http://sigkdd#Hotel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Place -->
+
+    <owl:Class rdf:about="http://sigkdd#Place"/>
+    
+
+
+    <!-- http://sigkdd#Program_Chair -->
+
+    <owl:Class rdf:about="http://sigkdd#Program_Chair">
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Organizator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Program_Committee -->
+
+    <owl:Class rdf:about="http://sigkdd#Program_Committee">
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Committee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Program_Committee_member -->
+
+    <owl:Class rdf:about="http://sigkdd#Program_Committee_member">
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Organizator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Registration_fee -->
+
+    <owl:Class rdf:about="http://sigkdd#Registration_fee">
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Fee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Review -->
+
+    <owl:Class rdf:about="http://sigkdd#Review">
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Document"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sigkdd#Speaker -->
+
+    <owl:Class rdf:about="http://sigkdd#Speaker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://sigkdd#presentation"/>
+                <owl:someValuesFrom rdf:resource="http://sigkdd#Document"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://sigkdd#Person"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

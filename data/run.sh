@@ -1,0 +1,1 @@
+java -jar logmap/logmap-matcher-4.0.jar MATCHER file:/Users/benhid/Documents/OntoAlign/data/cmt.owl file:/Users/benhid/Documents/OntoAlign/data/sigkdd.owl /Users/benhid/Documents/OntoAlign/data/logmap_output/ true
