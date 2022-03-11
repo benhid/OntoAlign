@@ -6,7 +6,7 @@
 
 This repository includes the implementation of LogMap-ML introduced in the paper **Augmenting Ontology Alignment by Semantic Embedding and Distant Supervision** (see also [LogMap](https://github.com/ernestojimenezruiz/logmap-matcher/)).
 
-The HeLis and FoodOn ontologies, and their partial GS, which are adopted for the evaluation in the paper, are under `data/`.
+The HeLis and FoodOn ontologies, and their partial GS, which are adopted for the evaluation in the paper, are under `eval/`.
 Note the HeLis ontology adopted has been pre-processed by transforming instances into classes.
 
 ## Install 
@@ -28,7 +28,17 @@ $ python -m pip install -r requirements.txt
 Run LogMap 4.0:
 
 ```sh
-$ java -jar logmap/logmap-matcher-4.0.jar MATCHER file:/path/to/data/helis_v1.00.owl file:/path/to/data/foodon-merged.owl /path/to/data/logmap_output/ true
+mkdir logmap_output
+
+java -jar logmap/logmap-matcher-4.0.jar MATCHER \
+  file:$(pwd)/use_cases/oaei_2021/cmt.owl file:$(pwd)/use_cases/oaei_2021/sigkdd.owl $(pwd)/logmap_output/ true
+
+# PAPER
+
+mkdir logmap_output
+
+java -jar logmap/logmap-matcher-4.0.jar MATCHER \
+  file:$(pwd)/use_cases/food/helis_v1.00.owl file:$(pwd)/use_cases/food/foodon-merged.owl $(pwd)/logmap_output/ true
 ```
 
 This leads to LogMap initial set of candidate mappings or _anchors_
@@ -48,7 +58,12 @@ The ontologies can use their own embedding models or use one common embedding mo
 This is to extract the class name and path information for each class in an ontology:
 
 ```sh
-$ python extraction.py data/cmt.owl
+python extraction.py use_cases/oaei_2021/cmt.owl
+python extraction.py use_cases/oaei_2021/sigkdd.owl
+
+# PAPER
+python extraction.py use_cases/food/helis_v1.00.owl
+python extraction.py use_cases/food/foodon-merged.owl
 ```
 
 It should be executed separately for both _to-be-aligned_ ontologies 
@@ -63,7 +78,13 @@ This is to generate high-confidence train mappings
 for training:
 
 ```sh
-$ python sample.py data/logmap_output/logmap_anchors.txt --left_names data/cmt_names.json --left_paths data/cmt_paths.txt --right_names data/sigkdd_names.json --right_paths data/sigkdd_paths.txt
+python sample.py logmap_output/logmap_anchors.txt \
+  --conflicting_mappings logmap_output/logmap_logically_conflicting_mappings.txt \
+  --left_names cmt_names.json --right_names sigkdd_names.json
+# PAPER
+python sample.py logmap_output/logmap_anchors.txt \
+  --conflicting_mappings logmap_output/logmap_discarded_mappings.txt \
+  --left_names helis_v1.00_names.json --right_names foodon-merged_names.json
 ```
 
 A set of class disjointness constraints (branch conflicts) denoted
@@ -88,14 +109,34 @@ and
 
 We train a Siamese Neural Network (SiamNN) as the mapping prediction model:
 
-```sh
-$ python train_valid.py --left_w2v enwiki_model/word2vec_gensim --right_w2v enwiki_model/word2vec_gensim --train_mappings data/train_mappings.txt --valid_mappings data/validation_mappings.txt --nn_dir data/model
+```shell
+python train_valid.py --train_mappings train_mappings.txt --valid_mappings validation_mappings.txt \
+  --left_w2v owl2vec_model/owl2vec_cmt --right_w2v owl2vec_model/owl2vec_sigkdd --nn_dir model
+python train_valid.py --train_mappings train_mappings.txt --valid_mappings validation_mappings.txt \
+  --left_w2v enwiki_model/word2vec_gensim --right_w2v enwiki_model/word2vec_gensim --nn_dir model
+# PAPER
+python train_valid.py --train_mappings train_mappings.txt --valid_mappings validation_mappings.txt \
+  --left_w2v owl2vec_model/owl2vec_helis_v1.00/output --right_w2v owl2vec_model/owl2vec_foodon-merged/output --nn_dir model
+python train_valid.py --train_mappings train_mappings.txt --valid_mappings validation_mappings.txt \
+  --left_w2v owl2vec_model/owl2vec_helis_v1.00_foodon-merged/output --right_w2v owl2vec_model/owl2vec_helis_v1.00_foodon-merged/output --nn_dir model
 ```
 
 Finally, we can compute the output mappings starting from a set of high recall candidate mappings (LogMap’s over-estimation mappings) to reduce the search space:
 
 ```sh
-$ python predict_candidates.py data/logmap_output/logmap_overestimation.txt --left_w2v enwiki_model/word2vec_gensim --right_w2v enwiki_model/word2vec_gensim --left_names data/cmt_names.json --left_paths data/cmt_paths.txt --right_names data/sigkdd_names.json --right_paths data/sigkdd_paths.txt --nn_dir data/model
+python predict_candidates.py logmap_output/logmap_overestimation.txt \
+  --left_w2v owl2vec_model/owl2vec_cmt --right_w2v owl2vec_model/owl2vec_sigkdd \
+  --left_names cmt_names.json --right_names sigkdd_names.json --nn_dir model
+python predict_candidates.py logmap_output/logmap_overestimation.txt \
+  --left_w2v enwiki_model/word2vec_gensim --right_w2v enwiki_model/word2vec_gensim \
+  --left_names cmt_names.json --right_names sigkdd_names.json --nn_dir model
+# PAPER
+python predict_candidates.py logmap_output/logmap_overestimation.txt \
+  --left_w2v owl2vec_model/owl2vec_helis_v1.00/output --right_w2v owl2vec_model/owl2vec_foodon-merged/output \
+  --left_names helis_v1.00_names.json --right_names foodon-merged_names.json --nn_dir model
+python predict_candidates.py logmap_output/logmap_overestimation.txt \
+  --left_w2v owl2vec_model/owl2vec_helis_v1.00_foodon-merged/output --right_w2v owl2vec_model/owl2vec_helis_v1.00_foodon-merged/output \
+  --left_names helis_v1.00_names.json --right_names foodon-merged_names.json --nn_dir model
 ```
 
 ### Step #3: Evaluate
@@ -103,7 +144,9 @@ $ python predict_candidates.py data/logmap_output/logmap_overestimation.txt --le
 Assuming that gold standards (complete ground truth mappings) are given, Precision and Recall can be directly calculated by:
 
 ```sh
-$ python evaluate.py --oaei_GS data/cmt-sigkdd.rdf --anchors data/logmap_output/logmap_anchors.txt --prediction data/prediction.txt
+python evaluate.py --GS use_cases/oaei_2021/reference.rdf --anchors logmap_output/logmap_anchors.txt --prediction prediction.txt
+# PAPER
+python evaluate.py --GS use_cases/food/reference.rdf --anchors logmap_output/logmap_anchors.txt --prediction prediction.txt
 ```
 
 ## Publications

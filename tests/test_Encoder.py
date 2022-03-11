@@ -1,6 +1,6 @@
 import numpy as np
 
-from lib.Encoder import path_encoder_class_concat, path_encoder_word_avg
+from lib.Encoder import path_encoder_class_concat, encoder_word_avg
 
 
 class _Word2Vec:
@@ -16,7 +16,7 @@ class _Word2Vec:
 def test_path_encoder_word_avg():
     name_path = ["a", "b", "c"]
     wv_model = _Word2Vec(vector_size=5)
-    encoded = path_encoder_word_avg(name_path=name_path, wv_model=wv_model)
+    encoded = encoder_word_avg(name_path=name_path, wv_model=wv_model)
     assert np.array_equal(encoded, np.array([0.75] * wv_model.vector_size))
 
 

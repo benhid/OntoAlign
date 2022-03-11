@@ -1,181 +1,124 @@
-import csv
-from typing import List
-
 import numpy as np
 from gensim.models.word2vec import Word2Vec
-from nltk.tokenize import word_tokenize
 
-from .Label import parse_uri_name
+from lib.Label import tokenize
 
 
-def to_words(item: str) -> List[str]:
-    if item.startswith("http://"):
-        if "#" in item:
-            uri_name = item.split("#")[1]
-        else:
-            uri_name = item.split("/")[-1]
-        words_str = parse_uri_name(uri_name)
-        words = words_str.split(" ")
+def vector(item: str, wv_model: Word2Vec) -> np.array:
+    if item in wv_model.wv:
+        return wv_model.wv[item]
     else:
-        item = (
-            item.replace("_", " ")
-            .replace("-", " ")
-            .replace(".", " ")
-            .replace("/", " ")
-            .replace('"', " ")
-            .replace("'", " ")
-            .replace("\\", " ")
-            .replace("(", " ")
-            .replace(")", " ")
-        )
-        tokenized_line = " ".join(word_tokenize(item))
-        words = [word for word in tokenized_line.lower().split()]
-    return words
+        return np.zeros(wv_model.vector_size)
 
 
-def path_encoder_word_avg(name_path: List[str], wv_model: Word2Vec) -> np.array:
+def encoder_word_avg(item: str, wv_model: Word2Vec) -> np.array:
     """
-    Embeds a path by averaging the embeddings of its classes.
+    Vector averaging means that the resulting vector is insensitive to the order of the words.
     """
     wv_dim = wv_model.vector_size
     num, v = 0, np.zeros(wv_dim)
-    for item in name_path:
-        for word in to_words(item=item):
-            if word in wv_model.wv:
-                num += 1
-                v += wv_model.wv[word]
+    for token in tokenize(item).split():
+        if token in wv_model.wv:
+            num += 1
+            v += wv_model.wv[token]
     avg = (v / num) if num > 0 else v
     return avg
 
 
-def path_encoder_class_concat(
-    path: List[str], class_num: int, wv_model: Word2Vec
-) -> np.array:
-    """
-    Embeds a path by concatenating the embeddings of its classes.
-    """
-    wv_dim = wv_model.vector_size
-    # To align the vectors of different samples, we fix the path length
-    # for the ontology by setting it to the length of the longest path (`class_num`)
-    # and pad the shorter paths with placeholders whose embeddings are zero vectors.
-    path = (
-        path[0:class_num]
-        if len(path) >= class_num
-        else path + ["NaN"] * (class_num - len(path))
-    )
-    e = np.zeros((class_num, wv_dim))
-    for i, item in enumerate(path):
-        if item == "NaN":
-            e[i, :] = np.zeros(wv_dim)  # zero vectors
-        else:
-            e[i, :] = path_encoder_word_avg(name_path=[item], wv_model=wv_model)
-    # Each row contains the embeddings for one item in the path.
-    return e
+def encoder_avg(item: str, uri: str, wv_model: Word2Vec, vec_type: str = 'word'):
+    if vec_type == 'word':
+        return encoder_word_avg(item=item, wv_model=wv_model)
+    elif vec_type == 'uri':
+        return vector(item=item, wv_model=wv_model)
+    elif vec_type == 'uri+label':
+        word_avg = encoder_word_avg(item=item, wv_model=wv_model)
+        uri_avg = vector(item=uri, wv_model=wv_model)
+        return np.concatenate((word_avg, uri_avg))
+    else:
+        raise AttributeError
 
 
-def load_samples(mappings, left_wv_model: Word2Vec, right_wv_model: Word2Vec):
+def load_samples(mappings, left_wv_model: Word2Vec, right_wv_model: Word2Vec, vec_type: str = 'uri+label'):
     left_wv_dim = left_wv_model.vector_size
     right_wv_dim = right_wv_model.vector_size
 
-    # `mappings` contains 3 lines per map (original + name + empty), thus the total number of mappings are:
-    num = int(len(mappings) / 3)
+    if vec_type == "uri+label":
+        left_wv_dim *= 2
+        right_wv_dim *= 2
+
+    num = int(len(mappings) / 2)
 
     # (height x weight x depth) or (batch_size x sequence_length x embedding_size)
     # see: https://jalammar.github.io/visual-numpy/
     #      https://www.w3resource.com/python-exercises/numpy/index-array.php
-    X1 = np.zeros((num, 3, left_wv_dim))
-    X2 = np.zeros((num, 3, right_wv_dim))
+    X1 = np.zeros((num, 1, left_wv_dim))
+    X2 = np.zeros((num, 1, right_wv_dim))
     Y = np.zeros((num, 2))
 
-    for i in range(0, len(mappings), 3):
+    for i in range(0, len(mappings), 2):
         class_mapping = mappings[i].split("|")
-        left_c, right_c = class_mapping[2], class_mapping[3]
+        c1, c2 = class_mapping[1], class_mapping[2]
 
         name_mapping = mappings[i + 1].split("|")
-        p1 = [
-            x
-            for x in list(csv.reader([name_mapping[2]], delimiter=",", quotechar='"'))[
-                0
-            ]
-        ]
-        p2 = [
-            x
-            for x in list(csv.reader([name_mapping[3]], delimiter=",", quotechar='"'))[
-                0
-            ]
-        ]
 
-        # Path type is 'uri+label', so we want to construct the class path using the URI name and labels.
-        p1 = [left_c.split(":")[1]] + p1
-        p2 = [right_c.split(":")[1]] + p2
+        n1, n2 = name_mapping[1], name_mapping[2]
 
-        j = int(i / 3)
+        j = int(i / 2)
 
-        # Embeds a path.
-        X1[j] = path_encoder_class_concat(
-            path=p1,
+        X1[j] = encoder_avg(
+            item=n1,
+            uri=c1,
             wv_model=left_wv_model,
-            class_num=3,
+            vec_type=vec_type
         )
-        X2[j] = path_encoder_class_concat(
-            path=p2,
+        X2[j] = encoder_avg(
+            item=n2,
+            uri=c2,
             wv_model=right_wv_model,
-            class_num=3,
+            vec_type=vec_type
         )
         Y[j] = (
             np.array([1.0, 0.0])
-            if name_mapping[0].startswith("neg")
+            if name_mapping[0].startswith("-")
             else np.array([0.0, 1.0])
         )
 
     return X1, X2, Y, num
 
-
 def to_samples(
-    mappings, mappings_names, left_wv_model: Word2Vec, right_wv_model: Word2Vec
+    mappings, mappings_n, left_wv_model: Word2Vec, right_wv_model: Word2Vec, vec_type: str = 'uri+label'
 ):
-    # TODO - Can we use refactor and use `load_samples()`?
     left_wv_dim = left_wv_model.vector_size
     right_wv_dim = right_wv_model.vector_size
 
+    if vec_type == "uri+label":
+        left_wv_dim *= 2
+        right_wv_dim *= 2
+
     num = len(mappings)
 
-    X1 = np.zeros((num, 3, left_wv_dim))
-    X2 = np.zeros((num, 3, right_wv_dim))
+    X1 = np.zeros((num, 1, left_wv_dim))
+    X2 = np.zeros((num, 1, right_wv_dim))
 
-    for i in range(num):
-
+    for i in range(len(mappings)):
         class_mapping = mappings[i].split("|")
-        left_c, right_c = class_mapping[2], class_mapping[3]
+        c1, c2 = class_mapping[1], class_mapping[2]
 
-        name_mapping = mappings_names[i].split("|")
-        p1 = [
-            x
-            for x in list(csv.reader([name_mapping[2]], delimiter=",", quotechar='"'))[
-                0
-            ]
-        ]
-        p2 = [
-            x
-            for x in list(csv.reader([name_mapping[3]], delimiter=",", quotechar='"'))[
-                0
-            ]
-        ]
+        name_mapping = mappings_n[i].split("|")
 
-        # Path type is 'uri+label', so we want to construct the class path using the URI name and labels.
-        p1 = [left_c.split(":")[1]] + p1
-        p2 = [right_c.split(":")[1]] + p2
+        n1, n2 = name_mapping[1], name_mapping[2]
 
-        # Embeds a path by concatenating the embeddings of its classes.
-        X1[i] = path_encoder_class_concat(
-            path=p1,
-            wv_model=left_wv_model,
-            class_num=3,
-        )
-        X2[i] = path_encoder_class_concat(
-            path=p2,
+        X1[i] = encoder_avg(
+            item=n1,
+            uri=c1,
             wv_model=right_wv_model,
-            class_num=3,
+            vec_type=vec_type
+        )
+        X2[i] = encoder_avg(
+            item=n2,
+            uri=c2,
+            wv_model=right_wv_model,
+            vec_type=vec_type
         )
 
     return X1, X2

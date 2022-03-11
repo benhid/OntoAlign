@@ -74,3 +74,5 @@ model
 
 # Word2Vec
 enwiki_model
+owl2vec_model
+x*

@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--oaei_GS", type=str, help="Path to GS file.")
+parser.add_argument("--GS", type=str, help="Path to GS file.")
 parser.add_argument(
     "--anchors",
     type=Path,
@@ -46,7 +46,7 @@ if __name__ == "__main__":
     # Read arguments from the command line.
     args = parser.parse_args()
 
-    ref_mappings, ref_all_mappings = read_oaei_mappings(file_path=args.oaei_GS)
+    ref_mappings, ref_all_mappings = read_oaei_mappings(file_path=args.GS)
     ref_excluded_mappings = set(ref_all_mappings) - set(ref_mappings)
 
     anchors = list()
@@ -58,12 +58,12 @@ if __name__ == "__main__":
     prediction = list()
     with open(args.prediction) as f:
         lines = f.readlines()
-        for j in range(0, len(lines), 3):
+        for j in range(0, len(lines), 2):
             tmp = lines[j].split("|")
-            if float(tmp[4]) >= args.threshold:
+            if float(tmp[3]) >= args.threshold:
                 prediction.append("%s|%s" % (tmp[1].lower(), tmp[2].lower()))
 
-    # Merge.
+    # We include anchors in our predictions.
     for anchor in anchors:
         if anchor not in prediction:
             prediction.append(anchor)

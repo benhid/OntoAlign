@@ -2,9 +2,6 @@ import argparse
 import json
 import random
 from pathlib import Path
-from typing import Dict, List, Tuple
-
-from lib.Label import get_label
 
 # Initiate the parser.
 parser = argparse.ArgumentParser()
@@ -12,15 +9,15 @@ parser.add_argument(
     "anchors",
     type=Path,
     default="logmap_output/logmap_anchors.txt",
-    help="Path to the LogMap anchors file.",
+    help="Path to LogMap anchors file.",
+)
+parser.add_argument(
+    "--conflicting_mappings",
+    type=Path,
+    default="logmap_output/logmap_discarded_mappings.txt",
+    help="Path to  LogMap discarded mappings file.",
 )
 parser.add_argument("--sample_duplicate", type=int, default=2)
-parser.add_argument(
-    "--left_paths", type=Path, help="Path to pre-extracted paths of each class."
-)
-parser.add_argument(
-    "--right_paths", type=Path, help="Path to pre-extracted paths of each class."
-)
 parser.add_argument(
     "--left_names",
     type=Path,
@@ -46,7 +43,7 @@ parser.add_argument(
 )
 parser.add_argument(
     "--anchor_branch_conflict",
-    default=True,
+    default=False,
     action=argparse.BooleanOptionalAction,
 )
 parser.add_argument(
@@ -55,18 +52,9 @@ parser.add_argument(
     action=argparse.BooleanOptionalAction,
 )
 
-# Class disjointness constraints for HeLis and FoodOn.
+# Class disjointness constraints.
 branch_conflicts = [
-    [
-        '","nutrient"',
-        '"food product type","material entity","independent continuant","continuant","entity"',
-    ],
-    [
-        '"basic food","food"',
-        '"food source","environmental material","fiat object part","material entity","independent continuant","continuant","entity"',
-    ],
-    ['"basic food","food"', '"organism","material entity"'],
-    ['"basic food","food"', '"chemical entity","material entity"'],
+    ['','']
 ]
 
 
@@ -77,55 +65,43 @@ def violates_branch_conflict(l1: str, l2: str) -> bool:
     return False
 
 
-def negative_sampling(
-    mappings: List[List[str]],
-    left_paths: List[List[str]],
-    right_paths: List[List[str]],
-    left_names: Dict[str, Tuple[str, str]],
-    right_names: Dict[str, Tuple[str, str]],
-    keep_uri: bool,
-) -> List[List[str]]:
-    """
-    For each mapping (c1,c2), we generate one negative sample replacing c1 with a class randomly selected
-    from the left ontology, and we generate a second negative sample replacing c2 with a class randomly selected
-    from the right ontology.
-    """
-    left_classes = set(left_names.keys())
-    right_classes = set(right_names.keys())
+def split_train_valid(mappings, train_rate):
+    random.shuffle(mappings)
+    ratio = round(len(mappings) * train_rate)
+    train = mappings[0:ratio]
+    if train_rate < 1.0:
+        valid = mappings[ratio:]
+    else:
+        valid = mappings[round(len(mappings) * 0.8):]
+    return train, valid
 
-    neg_mappings = []
 
-    for mapping in mappings:
-        line = mapping[0].split("|")
-        i, c1, c2 = line[0], line[2], line[3]
+def negative_sampling(pos_mappings, left_names, right_names):
+    neg_mappings = list()
+    for line in pos_mappings:
+        class_mapping = line[0].strip().split("|")
 
-        line = mapping[1].split("|")
-        l1, l2 = line[2], line[3]
+        idx = class_mapping[0]
+        c1 = class_mapping[1]
+        c2 = class_mapping[2]
 
-        neg_c1 = random.sample(list(left_classes - {c1}), 1)[0]
-        neg_l1 = get_label(
-            cls=neg_c1,
-            paths=left_paths,
-            names=left_names,
-            keep_uri=keep_uri,
-        )
+        n1 = left_names.get(c1)
+        n2 = right_names.get(c2)
 
-        if not neg_l1 == '""' and not l2 == '""':
-            origin = "neg-%s-h|origin|%s|%s" % (i, neg_c1, c2)
-            name = "neg-%s-h|name|%s|%s" % (i, neg_l1, l2)
+        neg_c2 = random.sample(list(right_names.keys() - {c2}), 1)[0]
+        neg_n2 = right_names.get(neg_c2)
+
+        if n1 and neg_n2:
+            origin = '-%s-f|%s|%s' % (idx, c1, neg_c2)
+            name = '-%s-f|%s|%s' % (idx, n1, neg_n2)
             neg_mappings.append([origin, name])
 
-        neg_c2 = random.sample(list(right_classes - {c2}), 1)[0]
-        neg_l2 = get_label(
-            cls=neg_c2,
-            paths=right_paths,
-            names=right_names,
-            keep_uri=keep_uri,
-        )
+        neg_c1 = random.sample(list(left_names.keys() - {c1}), 1)[0]
+        neg_n1 = left_names.get(neg_c1)
 
-        if not l1 == '""' and not neg_l2 == '""':
-            origin = "neg-%s-f|origin|%s|%s" % (i, c1, neg_c2)
-            name = "neg-%s-f|name|%s|%s" % (i, l1, neg_l2)
+        if neg_n1 and n2:
+            origin = '-%s-h|%s|%s' % (idx, neg_c1, c2)
+            name = '-%s-h|%s|%s' % (idx, neg_n1, n2)
             neg_mappings.append([origin, name])
 
     return neg_mappings
@@ -135,22 +111,20 @@ if __name__ == "__main__":
     # Read arguments from the command line.
     args = parser.parse_args()
 
-    # Reading files.
+    # Read files.
     with open(args.left_names, "r") as infile:
         left_names = json.load(infile)
 
     with open(args.right_names, "r") as infile:
         right_names = json.load(infile)
 
-    with open(args.left_paths, "r") as infile:
-        left_paths = [line.strip().split(",") for line in infile.readlines()]
-
-    with open(args.right_paths, "r") as infile:
-        right_paths = [line.strip().split(",") for line in infile.readlines()]
-
-    # Reading initial set of candidate mappings (anchors).
+    # Read initial set of candidate mappings (anchors).
     with open(args.anchors, "r") as infile:
         anchors = infile.readlines()
+
+    # Read conflict mappings from LogMap.
+    with open(args.conflicting_mappings, "r") as infile:
+        conflict_mappings = infile.readlines()
 
     mappings = []
     rule_violated_mappings = []
@@ -161,84 +135,64 @@ if __name__ == "__main__":
         c1 = mapping[0]
         c2 = mapping[1]
 
-        l1 = get_label(
-            cls=c1,
-            paths=left_paths,
-            names=left_names,
-            keep_uri=args.keep_uri,
-        )
-        l2 = get_label(
-            cls=c2,
-            paths=right_paths,
-            names=right_names,
-            keep_uri=args.keep_uri,
-        )
-
-        # TODO - If `keep_uri` is False, then violates_branch_conflict will not work.
-        if not l1 == '""' and not l2 == '""':
+        n1 = left_names[c1]
+        n2 = right_names[c2]
+        
+        for l1, l2 in [(x, y) for x in n1 for y in n2]:
             if args.anchor_branch_conflict and violates_branch_conflict(l1, l2):
-                origin = "neg-%d|origin|%s|%s" % (i + 1, c1, c2)
-                name = "neg-%d|name|%s|%s" % (i + 1, l1, l2)
-                rule_violated_mappings.append([origin, name])
+                origin = "-%d|%s|%s" % (i + 1, c1, c2)
+                label = "-%d|%s|%s" % (i + 1, l1, l2)
+                rule_violated_mappings.append([origin, label])
             else:
-                origin = "%d|origin|%s|%s" % (i + 1, c1, c2)
-                name = "%d|name|%s|%s" % (i + 1, l1, l2)
-                mappings.append([origin, name])
+                origin = "%d|%s|%s" % (i + 1, c1, c2)
+                label = "%d|%s|%s" % (i + 1, l1, l2)
+                mappings.append([origin, label])
 
     print(
         "%d mappings in total, %d mappings violate the rules"
         % (len(mappings), len(rule_violated_mappings))
     )
 
-    random.shuffle(mappings)
-
-    ratio = round(len(mappings) * args.train_rate)
-
-    train_mappings = mappings[0:ratio]
-    if args.train_rate < 1.0:
-        validation_mappings = mappings[ratio:]
-    else:
-        validation_mappings = mappings[round(len(mappings) * 0.8) :]
+    train_mappings, validation_mappings = split_train_valid(mappings, train_rate=args.train_rate)
 
     # We also adopt anchor mappings that violate the class disjointness constraints as negative samples and
     # randomly partition them into a training set and a validation set with the same ratio:
-
-    random.shuffle(rule_violated_mappings)
-
-    rv_ratio = round(len(rule_violated_mappings) * args.train_rate)
-
-    train_rv_mappings = rule_violated_mappings[0:rv_ratio]
-    if args.train_rate < 1.0:
-        valid_rv_mappings = rule_violated_mappings[rv_ratio:]
-    else:
-        valid_rv_mappings = rule_violated_mappings[
-            round(len(rule_violated_mappings) * 0.8) :
-        ]
+    train_rv_mappings, valid_rv_mappings = split_train_valid(rule_violated_mappings, train_rate=args.train_rate)
 
     if args.generate_negative_sample:
+        negative_mappings = []
+
+        for i, line in enumerate(conflict_mappings):
+            mapping = line.strip().split("|")
+
+            c1 = mapping[0]
+            c2 = mapping[1]
+
+            n1 = left_names[c1]
+            n2 = right_names[c2]
+
+            for l1, l2 in [(x, y) for x in n1 for y in n2]:
+                origin = "-%d|%s|%s" % (i + 1, c1, c2)
+                label = "-%d|%s|%s" % (i + 1, l1, l2)
+                negative_mappings.append([origin, label])
+
+        train_neg_mappings, valid_neg_mappings = split_train_valid(negative_mappings, train_rate=args.train_rate)
+
         train_mappings = (
             train_mappings * args.sample_duplicate
             + train_rv_mappings * args.sample_duplicate
-            + negative_sampling(
-                mappings=train_mappings,
-                left_paths=left_paths,
-                right_paths=right_paths,
-                left_names=left_names,
-                right_names=right_names,
-                keep_uri=args.keep_uri,
-            )
+            + train_neg_mappings
+            #+ negative_sampling(pos_mappings=train_mappings,
+            #                    left_names=left_names,
+            #                    right_names=right_names)
         )
         validation_mappings = (
             validation_mappings * args.sample_duplicate
             + valid_rv_mappings * args.sample_duplicate
-            + negative_sampling(
-                mappings=validation_mappings,
-                left_paths=left_paths,
-                right_paths=right_paths,
-                left_names=left_names,
-                right_names=right_names,
-                keep_uri=args.keep_uri,
-            )
+            + valid_neg_mappings
+            #+ negative_sampling(pos_mappings=validation_mappings,
+            #                    left_names=left_names,
+            #                    right_names=right_names)
         )
     else:
         train_mappings = train_mappings + train_rv_mappings
@@ -248,12 +202,8 @@ if __name__ == "__main__":
         for m in train_mappings:
             f2.write(m[0] + "\n")
             f2.write(m[1] + "\n")
-            f2.write("\n")
 
     with open("validation_mappings.txt", "w") as f2:
         for m in validation_mappings:
             f2.write(m[0] + "\n")
             f2.write(m[1] + "\n")
-            f2.write("\n")
-
-    print("-- Done --")

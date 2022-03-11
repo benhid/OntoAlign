@@ -15,13 +15,11 @@ parser.add_argument("--valid_mappings", type=Path, default="validation_mappings.
 parser.add_argument(
     "--left_w2v",
     type=Path,
-    default="w2v/",
     help="Path to OWL2Vec or Word2Vec model of the left ontology",
 )
 parser.add_argument(
     "--right_w2v",
     type=Path,
-    default="w2v/",
     help="Path to OWL2Vec or Word2Vec model of the right ontology",
 )
 parser.add_argument(
