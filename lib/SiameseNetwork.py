@@ -13,9 +13,8 @@ def siamese_nn_train(
     y_train,
     num_epochs: int = 14,
     batch_size: int = 8,
-    nn_type: str = "SiameseBiRNN",
     nn_dir: Path = Path("."),
-    **kwargs
+    **kwargs,
 ):
     y_train = y_train[:, 1]
     with tf.compat.v1.Graph().as_default():
@@ -24,28 +23,12 @@ def siamese_nn_train(
         )
         sess = tf.compat.v1.Session(config=session_conf)
         with sess.as_default():
-            if nn_type.startswith("SiameseBiRNN"):
-                nn = SiameseBiRNN(
-                    sequence_length1=train_x1.shape[1],
-                    sequence_length2=train_x2.shape[1],
-                    channel_num=train_x1.shape[2],
-                    rnn_hidden_size=kwargs.get("rnn_hidden_size", 200),
-                )
-            elif nn_type.startswith("SiameseAttBiRNN"):
-                nn = SiameseAttBiRNN(
-                    sequence_length1=train_x1.shape[1],
-                    sequence_length2=train_x2.shape[1],
-                    channel_num=train_x1.shape[2],
-                    rnn_hidden_size=kwargs.get("rnn_hidden_size", 200),
-                    attention_size=kwargs.get("rnn_attention_size", 50),
-                )
-            else:  # nn_type.startswith("SiameseMLP"):
-                nn = SiameseMLP(
-                    sequence_length1=train_x1.shape[1],
-                    sequence_length2=train_x2.shape[1],
-                    channel_num=train_x1.shape[2],
-                    hidden_size=kwargs.get("mlp_hidden_size", 200),
-                )
+            nn = SiameseMLP(
+                sequence_length1=train_x1.shape[1],
+                sequence_length2=train_x2.shape[1],
+                channel_num=train_x1.shape[2],
+                hidden_size=kwargs.get("mlp_hidden_size", 200),
+            )
 
             # Define Training procedure.
             global_step = tf.compat.v1.Variable(0, name="global_step", trainable=False)
@@ -118,7 +101,10 @@ def siamese_nn_train(
                 train_x2_all=train_x2,
                 train_y_all=y_train,
             )
-            saver.save(sess, save_path=str(checkpoint_prefix), global_step=current_step)
+            model_dir = saver.save(
+                sess, save_path=str(checkpoint_prefix), global_step=current_step
+            )
+            print(f"Saved model checkpoint at {model_dir}")
 
 
 def siamese_nn_predict(test_x1, test_x2, nn_dir: Path):
@@ -130,6 +116,8 @@ def siamese_nn_predict(test_x1, test_x2, nn_dir: Path):
     # Checkpoint directory.
     checkpoint_dir = nn_dir / "checkpoints"
     checkpoint_file = tf.compat.v1.train.latest_checkpoint(checkpoint_dir)
+
+    print(f"Found checkpoint file at {checkpoint_file}")
 
     graph = tf.compat.v1.Graph()
 
@@ -182,100 +170,6 @@ def batch_iter(data, num_epochs, batch_size, shuffle=True) -> Iterable:
                 yield shuffled_data[start_index:end_index]
         else:
             yield shuffled_data
-
-
-class SiameseBiRNN:
-    def __init__(
-        self, sequence_length1, sequence_length2, channel_num, rnn_hidden_size
-    ):
-        # Placeholders for input, output and dropout.
-        self.input_x1 = tf.compat.v1.placeholder(
-            tf.compat.v1.float32,
-            [None, sequence_length1, channel_num],
-            name="input_x1",
-        )
-        self.input_x2 = tf.compat.v1.placeholder(
-            tf.compat.v1.float32,
-            [None, sequence_length2, channel_num],
-            name="input_x2",
-        )
-        self.input_y = tf.compat.v1.placeholder(
-            tf.compat.v1.float32, [None], name="input_y"
-        )
-        self.dropout_keep_prob = tf.compat.v1.placeholder(
-            tf.compat.v1.float32, name="dropout_keep_prob"
-        )
-
-        with tf.compat.v1.name_scope("NBiRNN"), tf.compat.v1.variable_scope(
-            "VBiRNN", reuse=tf.compat.v1.AUTO_REUSE
-        ):
-            self.rnn_outputs1, _ = bi_rnn(
-                tf.compat.v1.nn.rnn_cell.GRUCell(rnn_hidden_size),
-                tf.compat.v1.nn.rnn_cell.GRUCell(rnn_hidden_size),
-                self.input_x1,
-                dtype=tf.compat.v1.float32,
-            )
-            self.rnn_output1 = tf.compat.v1.concat(self.rnn_outputs1, 2)
-            self.rnn_output_mean1 = tf.compat.v1.reduce_mean(self.rnn_output1, axis=1)
-
-            self.rnn_outputs2, _ = bi_rnn(
-                tf.compat.v1.nn.rnn_cell.GRUCell(rnn_hidden_size),
-                tf.compat.v1.nn.rnn_cell.GRUCell(rnn_hidden_size),
-                inputs=self.input_x2,
-                dtype=tf.compat.v1.float32,
-            )
-            self.rnn_output2 = tf.compat.v1.concat(self.rnn_outputs2, 2)
-            self.rnn_output_mean2 = tf.compat.v1.reduce_mean(self.rnn_output2, axis=1)
-
-        with tf.compat.v1.name_scope("output"):
-            self.distance = tf.compat.v1.sqrt(
-                tf.compat.v1.reduce_sum(
-                    tf.compat.v1.square(
-                        tf.compat.v1.subtract(
-                            self.rnn_output_mean1, self.rnn_output_mean2
-                        )
-                    ),
-                    1,
-                    keep_dims=True,
-                )
-            )
-            self.denominator = tf.compat.v1.add(
-                tf.compat.v1.sqrt(
-                    tf.compat.v1.reduce_sum(
-                        tf.compat.v1.square(self.rnn_output_mean1),
-                        1,
-                        keep_dims=True,
-                    )
-                ),
-                tf.compat.v1.sqrt(
-                    tf.compat.v1.reduce_sum(
-                        tf.compat.v1.square(self.rnn_output_mean2),
-                        1,
-                        keep_dims=True,
-                    )
-                ),
-            )
-            self.distance = tf.compat.v1.div(self.distance, self.denominator)
-            self.distance = tf.compat.v1.reshape(self.distance, [-1], name="distance")
-
-        # Contrastive loss
-        with tf.compat.v1.name_scope("loss"):
-            item1 = self.input_y * tf.compat.v1.square(self.distance)
-            item2 = (1 - self.input_y) * tf.compat.v1.square(
-                tf.compat.v1.maximum((1 - self.distance), 0)
-            )
-            self.loss = tf.compat.v1.reduce_sum(item1 + item2) / 2
-
-        with tf.compat.v1.name_scope("accuracy"):
-            self.temp_sim = tf.compat.v1.subtract(
-                tf.compat.v1.ones_like(self.distance),
-                tf.compat.v1.compat.v1.rint(self.distance),
-                name="temp_sim",
-            )
-            correct_predictions = tf.compat.v1.equal(self.temp_sim, self.input_y)
-            self.accuracy = tf.compat.v1.reduce_mean(
-                tf.compat.v1.cast(correct_predictions, "float"), name="accuracy"
-            )
 
 
 class SiameseAttBiRNN:
@@ -447,6 +341,7 @@ class SiameseMLP:
         self.dropout_keep_prob = tf.compat.v1.placeholder(
             tf.compat.v1.float32, name="dropout_keep_prob"
         )
+        # Fully connected layers.
         with tf.compat.v1.name_scope("FCLayers"):
             FC_W11 = tf.compat.v1.get_variable(
                 "FC_W11",
@@ -482,6 +377,9 @@ class SiameseMLP:
             )
 
         with tf.compat.v1.name_scope("output"):
+            # Normalized distance between f1 and f2:
+            #   d = ||f1-f2|| / (||f1||+||f2||)
+            # where ||.|| denotes the Euclidean form.
             self.distance = tf.compat.v1.sqrt(
                 tf.compat.v1.reduce_sum(
                     tf.compat.v1.square(
@@ -508,6 +406,10 @@ class SiameseMLP:
 
         # Contrastive loss.
         with tf.compat.v1.name_scope("loss"):
+            # The two networks are learned together by minimizing the
+            # following contrastive loss using the Adam optimizer:
+            #   Loss = \sum{ y_i * d_i + (1-y_i) * max(e-d_i,0) / 2 }
+            # where e denotes a margin value.
             item1 = self.input_y * tf.compat.v1.square(self.distance)
             item2 = (1 - self.input_y) * tf.compat.v1.square(
                 tf.compat.v1.maximum((1 - self.distance), 0)

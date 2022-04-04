@@ -1,6 +1,6 @@
 import numpy as np
 
-from lib.Encoder import path_encoder_class_concat, encoder_word_avg
+from lib.Encoder import encoder_word_avg, path_encoder_class_concat
 
 
 class _Word2Vec:

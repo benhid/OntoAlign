@@ -1,0 +1,3343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<Alignment>
+<xml>yes</xml>
+<level>0</level>
+<type>??</type>
+<onto1>Optional.of(http://www.fbk.eu/ontologies/virtualcoach)</onto1>
+<onto2>Optional.of(http://www.fbk.eu/ontologies/virtualcoach)</onto2>
+<uri1>Optional.of(http://www.fbk.eu/ontologies/virtualcoach)</uri1>
+<uri2>Optional.of(http://www.fbk.eu/ontologies/virtualcoach)</uri2>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-315"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311885"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-315"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301714"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-068"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307240"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fish"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411222"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1516"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301080"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WheatFour"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302340"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1513"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316424"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700080"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03304537"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1506"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311400"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1504"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309109"/>
+		<measure rdf:datatype="xsd:float">0.3</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-50086"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301422"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001094"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001579"/>
+		<measure rdf:datatype="xsd:float">0.55</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Glucose"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17234"/>
+		<measure rdf:datatype="xsd:float">0.91</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VitaminE"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33229"/>
+		<measure rdf:datatype="xsd:float">1.14</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100092"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411496"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900505"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002892"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Maltose"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17306"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Yogurt"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001014"/>
+		<measure rdf:datatype="xsd:float">0.76</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Arginine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_29016"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Starch"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301000"/>
+		<measure rdf:datatype="xsd:float">1.02</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Starch"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28017"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2012"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310643"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700342"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03317262"/>
+		<measure rdf:datatype="xsd:float">0.46</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-342"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03304656"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VitaminB6"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27306"/>
+		<measure rdf:datatype="xsd:float">0.78</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805874"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301830"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805548"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302355"/>
+		<measure rdf:datatype="xsd:float">0.41</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1300"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411854"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1300"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_43062"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mollusc"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03412112"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mollusc"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6447"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805951"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306892"/>
+		<measure rdf:datatype="xsd:float">0.2</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1303"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411505"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-71786"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302995"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Glycine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15428"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805941"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305781"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460231"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFatsAndOils"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315522"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4011"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307232"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-705153"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03543416"/>
+		<measure rdf:datatype="xsd:float">0.42</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420108"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4009"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310273"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4008"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310991"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4007"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310990"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8743"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315900"/>
+		<measure rdf:datatype="xsd:float">0.26</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-77"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003000"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Methionine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16811"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-73"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302549"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-72"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309852"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700639"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305518"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700637"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305289"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-51"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03540182"/>
+		<measure rdf:datatype="xsd:float">0.2</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0020"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305671"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Sucrose"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17992"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Protein"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36080"/>
+		<measure rdf:datatype="xsd:float">0.88</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2017"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/UBERON_0036016"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0017"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310675"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0011"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302508"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19021"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03540093"/>
+		<measure rdf:datatype="xsd:float">0.43</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-33"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301119"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-33"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302200"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2006"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302806"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2003"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303780"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19014"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301329"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-702901"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002808"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-20"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302485"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Phenylalanine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28044"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1601"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001043"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-18"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307663"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-16"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306272"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-15"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307541"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-14"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309657"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-13"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302500"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-10"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302340"/>
+		<measure rdf:datatype="xsd:float">0.54</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-606010"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306867"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700016"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303929"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-031"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302897"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Galactose"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28260"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100184"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301236"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100183"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003135"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100182"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305086"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100225"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302946"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002057"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002753"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303220"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-905"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302578"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-909"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03304152"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100174"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310082"/>
+		<measure rdf:datatype="xsd:float">0.77</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1715"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303686"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100172"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301397"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19032"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305848"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-061"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310675"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100110"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411427"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-344"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411729"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100166"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309857"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-346"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03413793"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-600009"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03317168"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1804"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002801"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3153"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03543413"/>
+		<measure rdf:datatype="xsd:float">0.46</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303109"/>
+		<measure rdf:datatype="xsd:float">0.76</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-081"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303206"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-081"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03317393"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-777013"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03414449"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100143"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28017"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100143"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301000"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-428"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301123"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-428"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001071"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-427"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301580"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9050"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316044"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-426"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301702"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-425"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301719"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-424"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301724"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-091"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316266"/>
+		<measure rdf:datatype="xsd:float">0.54</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-421"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301593"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-420"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302976"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-606512"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306143"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-419"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002391"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-419"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002473"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-417"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315108"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-416"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303079"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-415"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311790"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-413"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301441"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18059"/>
+		<measure rdf:datatype="xsd:float">0.91</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-409"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3493"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-408"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301040"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-407"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301240"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-406"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311513"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-404"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309832"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-403"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301831"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-402"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_140311"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1722"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302916"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Alcohol"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_30879"/>
+		<measure rdf:datatype="xsd:float">0.83</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FolicAcid"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27470"/>
+		<measure rdf:datatype="xsd:float">0.82</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FolicAcid"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_37445"/>
+		<measure rdf:datatype="xsd:float">1.09</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1151"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302012"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1150"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316150"/>
+		<measure rdf:datatype="xsd:float">0.43</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100112"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03412401"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1718"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303578"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1711"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301889"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1710"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310415"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-602073"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03414639"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1147"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002502"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WhiteBread"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301055"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Threonine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26986"/>
+		<measure rdf:datatype="xsd:float">0.91</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VitaminB12"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03413761"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9070"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411374"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1725"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002425"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9068"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420307"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_46662"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Day"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/UO_0000033"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0019"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316428"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9053"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301619"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VitaminB1"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26948"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2005"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303588"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9047"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003275"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cystine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17376"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ColdCuts"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310675"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805867"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301813"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805678"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316347"/>
+		<measure rdf:datatype="xsd:float">0.2</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9023"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310387"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-602004"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411950"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-911"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316687"/>
+		<measure rdf:datatype="xsd:float">0.84</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9001"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316042"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cream"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305258"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4002"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301632"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-60092"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307113"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-60092"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302651"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-60088"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302360"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700285"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002674"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-087"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306347"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-085"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001302"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lysine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25094"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BetaCarotene"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17579"/>
+		<measure rdf:datatype="xsd:float">0.81</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805080"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307280"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-078"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002057"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-070"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315272"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1721"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001295"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-062"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315904"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Isoleucine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24898"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-666006"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2877"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-666005"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302371"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-053"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310646"/>
+		<measure rdf:datatype="xsd:float">0.29</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-052"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003252"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Sausages"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315904"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002664"/>
+		<measure rdf:datatype="xsd:float">0.79</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lunch"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80250"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-391"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03304580"/>
+		<measure rdf:datatype="xsd:float">0.22</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302340"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Pasta"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306347"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-032"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302333"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalFats"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420190"/>
+		<measure rdf:datatype="xsd:float">0.13</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-382"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301833"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetableBasedBeverages"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316050"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-025"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-022"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311075"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-450085"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302327"/>
+		<measure rdf:datatype="xsd:float">0.39</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-999692"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305236"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-017"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002465"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-017"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301884"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-016"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316649"/>
+		<measure rdf:datatype="xsd:float">0.42</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-015"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03304911"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-012"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03317446"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-011"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306619"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19067"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003019"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Leucine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25017"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-401"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301701"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301312"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-006"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002845"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_381124"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4567"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-343"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301727"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-423"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003133"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-341"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307633"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900503"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305617"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-429"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303398"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1098"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411457"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1093"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411346"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1092"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/GENEPIO_0002752"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Biotin"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51570"/>
+		<measure rdf:datatype="xsd:float">0.96</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Biotin"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_15956"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1091"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002703"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1091"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303012"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100051"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/GAZ_00000558"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-337"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311757"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-335"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315873"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-334"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309709"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-333"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002687"/>
+		<measure rdf:datatype="xsd:float">0.83</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-331"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001998"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-330"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002439"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100217"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310746"/>
+		<measure rdf:datatype="xsd:float">0.24</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1089"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411253"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1088"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03412114"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nuts"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306632"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Candy"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301051"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1084"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411460"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fructose"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28757"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1900"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310351"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1800"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316061"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-327"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03414537"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-326"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411171"/>
+		<measure rdf:datatype="xsd:float">0.76</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-324"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_48038"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-322"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301704"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#IceCream"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305671"/>
+		<measure rdf:datatype="xsd:float">0.77</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#IceCream"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001045"/>
+		<measure rdf:datatype="xsd:float">0.54</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1070"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002690"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Flour"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301116"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-910"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302776"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100031"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310935"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900546"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306286"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-319"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302727"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-318"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301545"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-317"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002922"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-313"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302732"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-312"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301570"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-908"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310232"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-310"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301773"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-907"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301474"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-904"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310046"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-902"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420307"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-901"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301826"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301672"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3017"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316066"/>
+		<measure rdf:datatype="xsd:float">0.23</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3016"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003157"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500025"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311604"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100020"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03304893"/>
+		<measure rdf:datatype="xsd:float">0.43</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-309"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301713"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-308"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1204434"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-307"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306698"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-306"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411309"/>
+		<measure rdf:datatype="xsd:float">0.86</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-302"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_355939"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1902"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302051"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100235"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301564"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-603501"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301844"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100019"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310912"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3004"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301440"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1043"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003148"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1328"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411331"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1327"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411258"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1326"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03412650"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1325"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1489894"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1325"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411269"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1324"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411906"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1320"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411644"/>
+		<measure rdf:datatype="xsd:float">0.55</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1320"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6608"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-411"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301722"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-412"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307119"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1319"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_27697"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1319"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411558"/>
+		<measure rdf:datatype="xsd:float">0.54</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1318"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_52904"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1318"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411240"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1317"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_117893"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1316"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411514"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1314"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_6563"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1314"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411224"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1313"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411423"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1313"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8043"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1311"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8008"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1311"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411293"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500023"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003008"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500021"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302045"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1309"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411237"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Breakfast"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80249"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1308"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411510"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1307"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411223"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-999905"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310734"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500003"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03540080"/>
+		<measure rdf:datatype="xsd:float">0.42</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700797"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03543414"/>
+		<measure rdf:datatype="xsd:float">0.49</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AsparticAcid"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_22660"/>
+		<measure rdf:datatype="xsd:float">0.93</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8057"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001276"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8058"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310760"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8678"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002673"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-31298"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316919"/>
+		<measure rdf:datatype="xsd:float">0.23</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500019"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411532"/>
+		<measure rdf:datatype="xsd:float">0.55</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3018"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301469"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4010"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310272"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8061"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302713"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Pastry"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315272"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VitaminD"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27300"/>
+		<measure rdf:datatype="xsd:float">1.05</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Rice"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301641"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VitaminC"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_21241"/>
+		<measure rdf:datatype="xsd:float">1.06</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Salt"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24866"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Shellfish"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411433"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-10023"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305330"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805712"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306809"/>
+		<measure rdf:datatype="xsd:float">0.33</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Algae"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411301"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805470"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309980"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Valine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27266"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700459"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03312068"/>
+		<measure rdf:datatype="xsd:float">0.18</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dressing"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315498"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lactose"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17716"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19022"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302492"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Histidine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27570"/>
+		<measure rdf:datatype="xsd:float">0.87</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700178"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301453"/>
+		<measure rdf:datatype="xsd:float">0.24</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Aminoacid"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33709"/>
+		<measure rdf:datatype="xsd:float">1.03</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LinolenicAcid"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25048"/>
+		<measure rdf:datatype="xsd:float">0.78</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700418"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411335"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1306"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03413916"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805166"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305046"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1713"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303502"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VitaminA"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_12777"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beverages"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003202"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-592"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003025"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-592"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301268"/>
+		<measure rdf:datatype="xsd:float">0.54</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1322"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_30948"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VinegarDressing"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301705"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700019"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306255"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-74"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301595"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8063"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03543336"/>
+		<measure rdf:datatype="xsd:float">0.37</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Tyrosine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18186"/>
+		<measure rdf:datatype="xsd:float">0.9</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mushrooms"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301303"/>
+		<measure rdf:datatype="xsd:float">0.56</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mushrooms"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001287"/>
+		<measure rdf:datatype="xsd:float">0.76</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-502"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03306901"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C80248"/>
+		<measure rdf:datatype="xsd:float">0.83</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1726"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003247"/>
+		<measure rdf:datatype="xsd:float">0.82</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8059"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301638"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1295"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002706"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1294"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002705"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1602"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03302116"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1602"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310780"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8055"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03543137"/>
+		<measure rdf:datatype="xsd:float">0.39</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-512"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309360"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8053"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003258"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888015"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310571"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888014"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309491"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888011"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307728"/>
+		<measure rdf:datatype="xsd:float">0.25</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#GlutamicAcid"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_18237"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1611"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301505"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100009"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301736"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888008"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002870"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-524"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303085"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888006"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03308642"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888005"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311296"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888001"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03543417"/>
+		<measure rdf:datatype="xsd:float">0.49</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8038"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03304999"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8037"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003208"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1087"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003282"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03542649"/>
+		<measure rdf:datatype="xsd:float">0.45</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100230"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03305417"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-514"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301283"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-206"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301372"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-202"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002752"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/PO_0009001"/>
+		<measure rdf:datatype="xsd:float">0.59</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03304644"/>
+		<measure rdf:datatype="xsd:float">0.77</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1264"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310563"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Tryptophan"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_27897"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100227"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315342"/>
+		<measure rdf:datatype="xsd:float">0.58</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8029"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411414"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8029"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_55118"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8026"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03311343"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-508"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_3755"/>
+		<measure rdf:datatype="xsd:float">0.6</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8022"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411742"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8022"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2769"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-506"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003266"/>
+		<measure rdf:datatype="xsd:float">0.13</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-505"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301246"/>
+		<measure rdf:datatype="xsd:float">0.17</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-503"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03310978"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-30039"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03304608"/>
+		<measure rdf:datatype="xsd:float">0.74</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CornMealMush"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03317508"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Jam"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03309973"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8019"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003043"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beer"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301619"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100207"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301556"/>
+		<measure rdf:datatype="xsd:float">0.51</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Alanine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_16449"/>
+		<measure rdf:datatype="xsd:float">1.03</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100205"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301705"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8008"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03315526"/>
+		<measure rdf:datatype="xsd:float">0.13</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-71787"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303508"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Proline"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26271"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#TomatoSauces"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03301217"/>
+		<measure rdf:datatype="xsd:float">0.83</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PantothenicAcid"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7916"/>
+		<measure rdf:datatype="xsd:float">0.94</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PantothenicAcid"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_25848"/>
+		<measure rdf:datatype="xsd:float">1.14</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1805"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002802"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Week"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/UO_0000034"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FOOD-50399"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4120"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Seeds"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03420155"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03303206"/>
+		<measure rdf:datatype="xsd:float">0.53</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+		<entity2 rdf:resource="http://purl.obolibrary.org/obo/FOODON_03317393"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+</Alignment>
+</rdf:RDF>

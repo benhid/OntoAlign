@@ -1,19 +1,41 @@
-import spacy
 import re
 
-nlp = spacy.load("en_core_web_sm")
+# try:
+#     import spacy
+#
+#     nlp = spacy.load("en_core_web_sm")
+#
+#     def word_tokenize(x):
+#         doc = nlp(str(x), disable=["tagger", "parser", "ner", "lemmatizer", "textcat"])
+#         return [token.text.strip() for token in doc if not token.is_punct]
+#
+# except ImportError(spacy):
+#     print("default nltk tokenize")
+from nltk.tokenize import word_tokenize
 
-camelcase = re.compile(r'.+?(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|$)')
+camelcase = re.compile(r".+?(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|$)")
 
 
-def tokenize(item: str):
-    doc = nlp(str(item), disable=['tagger', 'parser', 'ner', 'lemmatizer', 'textcat'])
-    return ' '.join(token.text.lower() for token in doc if not token.is_punct)
+def tokenize(item: str) -> str:
+    item = (
+        item.replace("_", " ")
+        .replace("-", " ")
+        .replace(",", " ")
+        # .replace(".", " ")  # "e.g."
+        .replace("/", " ")
+        .replace('"', " ")
+        .replace("'", " ")
+        .replace("\\", " ")
+        .replace("(", " ")
+        .replace(")", " ")
+        .lower()
+    )
+    words = word_tokenize(item)
+    return " ".join(words)
 
 
 def label_to_string(label: str) -> str:
-    name_str = tokenize(label)
-    return f'"{name_str}"'
+    return tokenize(label)
 
 
 def name_to_string(uri: str) -> str:
@@ -25,6 +47,5 @@ def name_to_string(uri: str) -> str:
         .replace('"', " ")
         .replace("'", " ")
     )
-    uri = ' '.join(camelcase.findall(uri))
-    name_str = tokenize(uri)
-    return f'"{name_str}"'
+    uri = " ".join(camelcase.findall(uri))
+    return tokenize(uri)

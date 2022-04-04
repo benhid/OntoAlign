@@ -72,7 +72,6 @@ pythonenv3.8
 # Tensorflow
 model
 
-# Word2Vec
-enwiki_model
-owl2vec_model
-x*
+# OWL2Vec
+*model
+cache

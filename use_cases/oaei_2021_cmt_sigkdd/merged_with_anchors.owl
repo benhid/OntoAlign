@@ -1,0 +1,2125 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://merged"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://merged">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="http://cmt#Acceptance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Administrator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#AssociatedChair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#AuthorNotReviewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Bid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Chairman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Co-author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#ConferenceChair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#ConferenceMember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Decision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#ExternalReviewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Meta-Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Meta-Reviewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Paper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#PaperAbstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#PaperFullVersion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Preference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#ProgramCommitteeChair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Rejection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#Reviewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#SubjectArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://cmt#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Author_of_paper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Author_of_paper_student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Best_Applications_Paper_Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Best_Paper_Awards_Committee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Best_Research_Paper_Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Best_Student_Paper_Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Best_Student_Paper_Supporter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Bronze_Supporter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Committee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Conference_hall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Deadline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Deadline_Abstract_Submission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Deadline_Author_notification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Deadline_Paper_Submission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Exhibitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Fee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#General_Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Gold_Supporter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Invited_Speaker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Listener"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Main_office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Organizator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Organizing_Committee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Organizing_Committee_member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Paper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Platinum_Supporter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Program_Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Program_Committee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Program_Committee_member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Registration_Non-Member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Registration_SIGKDD_Member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Registration_SIGMOD_Member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Registration_Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Silver_Supporter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Speaker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Sponzor_fee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://sigkdd#Webmaster"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#acceptPaper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#acceptedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#addProgramCommitteeMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#addedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#adjustBid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#adjustedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#assignExternalReviewer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#assignReviewer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#assignedByAdministrator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#assignedByReviewer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#assignedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#co-writePaper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#detailsEnteredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#enableVirtualMeeting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#endReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#enterConferenceDetails"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#enterReviewCriteria"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#finalizePaperAssignment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hardcopyMailingManifestsPrintedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hasBeenAssigned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hasBid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hasCo-author"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hasConferenceMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hasConflictOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hasDecision"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hasProgramCommitteeMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#hasSubjectArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#markConflictOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#memberOfConference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#memberOfProgramCommittee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#paperAssignmentFinalizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#paperAssignmentToolsRunBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#printHardcopyMailingManifests"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#readByMeta-Reviewer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#readByReviewer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#readPaper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#rejectPaper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#rejectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#reviewCriteriaEnteredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#reviewerBiddingStartedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#runPaperAssignmentTools"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#setMaxPapers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#startReviewerBidding"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#submitPaper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#virtualMeetingEnabledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#writePaper"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#writeReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://cmt#writtenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#award"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#awarded_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#can_stay_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#design"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#designed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#hold"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#holded_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#notification_until"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#obtain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#pay"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#payed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#presentation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#presentationed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#search"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#searched_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#submit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://sigkdd#submit_until"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#acceptsHardcopySubmissions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#logoURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#maxPapers"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#paperID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#reviewsPerPaper"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#siteURL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://cmt#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#City_of_conference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#Currency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#E-mail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#End_of_conference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#Name_of_conference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#Name_of_sponsor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#Nation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#Price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://sigkdd#Start_of_conference"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+            <Literal>http://cmt#Author</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+            <Literal>http://sigkdd#Author</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.6100000000000001</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+            <Literal>=</Literal>
+        </Annotation>
+        <Class IRI="http://cmt#Author"/>
+        <Class IRI="http://sigkdd#Author"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://cmt#Chairman"/>
+        <ObjectUnionOf>
+            <Class IRI="http://cmt#AssociatedChair"/>
+            <Class IRI="http://cmt#ConferenceChair"/>
+            <Class IRI="http://cmt#ProgramCommitteeChair"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+            <Literal>http://cmt#Conference</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+            <Literal>http://sigkdd#Conference</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.505</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+            <Literal>=</Literal>
+        </Annotation>
+        <Class IRI="http://cmt#Conference"/>
+        <Class IRI="http://sigkdd#Conference"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+            <Literal>http://cmt#Document</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+            <Literal>http://sigkdd#Document</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.864</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+            <Literal>=</Literal>
+        </Annotation>
+        <Class IRI="http://cmt#Document"/>
+        <Class IRI="http://sigkdd#Document"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+            <Literal>http://cmt#Paper</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+            <Literal>http://sigkdd#Paper</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.75</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+            <Literal>=</Literal>
+        </Annotation>
+        <Class IRI="http://cmt#Paper"/>
+        <Class IRI="http://sigkdd#Paper"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+            <Literal>http://cmt#Person</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+            <Literal>http://sigkdd#Person</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.63</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+            <Literal>=</Literal>
+        </Annotation>
+        <Class IRI="http://cmt#Person"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+            <Literal>http://cmt#ProgramCommittee</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+            <Literal>http://sigkdd#Program_Committee</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.505</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+            <Literal>=</Literal>
+        </Annotation>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+        <Class IRI="http://sigkdd#Program_Committee"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+            <Literal>http://cmt#ProgramCommitteeMember</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+            <Literal>http://sigkdd#Program_Committee_member</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.7</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+            <Literal>=</Literal>
+        </Annotation>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+        <Class IRI="http://sigkdd#Program_Committee_member"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+            <Literal>http://cmt#Review</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+            <Literal>http://sigkdd#Review</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.8350000000000001</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty IRI="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+            <Literal>=</Literal>
+        </Annotation>
+        <Class IRI="http://cmt#Review"/>
+        <Class IRI="http://sigkdd#Review"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://sigkdd#Abstract"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#submit_until"/>
+            <Class IRI="http://sigkdd#Deadline_Abstract_Submission"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://sigkdd#Author"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#submit"/>
+            <Class IRI="http://sigkdd#Paper"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://sigkdd#Award"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#awarded_by"/>
+            <Class IRI="http://sigkdd#Organizator"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://sigkdd#Paper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#submit_until"/>
+            <Class IRI="http://sigkdd#Deadline_Paper_Submission"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://sigkdd#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#pay"/>
+            <Class IRI="http://sigkdd#Registration_fee"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://sigkdd#Speaker"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#presentation"/>
+            <Class IRI="http://sigkdd#Document"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://sigkdd#Sponzor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#pay"/>
+            <Class IRI="http://sigkdd#Sponzor_fee"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://cmt#Acceptance"/>
+        <Class IRI="http://cmt#Decision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Administrator"/>
+        <Class IRI="http://cmt#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#AssociatedChair"/>
+        <Class IRI="http://cmt#ConferenceMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Author"/>
+        <Class IRI="http://cmt#ConferenceMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Author"/>
+        <Class IRI="http://cmt#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#AuthorNotReviewer"/>
+        <Class IRI="http://cmt#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Chairman"/>
+        <Class IRI="http://cmt#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Co-author"/>
+        <Class IRI="http://cmt#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Conference"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Conference"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="http://cmt#date"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Conference"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://cmt#name"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Conference"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://cmt#reviewsPerPaper"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#ConferenceChair"/>
+        <Class IRI="http://cmt#ConferenceMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#ConferenceMember"/>
+        <Class IRI="http://cmt#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#ExternalReviewer"/>
+        <Class IRI="http://cmt#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#ExternalReviewer"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://cmt#assignedByReviewer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Meta-Review"/>
+        <Class IRI="http://cmt#Review"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Meta-Reviewer"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Paper"/>
+        <Class IRI="http://cmt#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Paper"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="http://cmt#hasDecision"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Paper"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://cmt#readByReviewer"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Paper"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://cmt#hasDecision"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Paper"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="http://cmt#readByMeta-Reviewer"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#PaperAbstract"/>
+        <Class IRI="http://cmt#Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#PaperFullVersion"/>
+        <Class IRI="http://cmt#Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#ProgramCommitteeChair"/>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+        <Class IRI="http://cmt#ConferenceMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+        <Class IRI="http://cmt#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Rejection"/>
+        <Class IRI="http://cmt#Decision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Review"/>
+        <Class IRI="http://cmt#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Reviewer"/>
+        <Class IRI="http://cmt#ConferenceMember"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#Reviewer"/>
+        <Class IRI="http://cmt#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://cmt#User"/>
+        <Class IRI="http://cmt#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#design"/>
+            <Class IRI="http://sigkdd#Deadline"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#hold"/>
+            <Class IRI="http://sigkdd#Conference"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#search"/>
+            <Class IRI="http://sigkdd#Sponzor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Abstract"/>
+        <Class IRI="http://sigkdd#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Author"/>
+        <Class IRI="http://sigkdd#Speaker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Author"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#notification_until"/>
+            <Class IRI="http://sigkdd#Deadline_Author_notification"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Author_of_paper"/>
+        <Class IRI="http://sigkdd#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Author_of_paper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#award"/>
+            <Class IRI="http://sigkdd#Best_Applications_Paper_Award"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Author_of_paper"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#award"/>
+            <Class IRI="http://sigkdd#Best_Research_Paper_Award"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Author_of_paper_student"/>
+        <Class IRI="http://sigkdd#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Author_of_paper_student"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#award"/>
+            <Class IRI="http://sigkdd#Best_Student_Paper_Award"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Best_Applications_Paper_Award"/>
+        <Class IRI="http://sigkdd#Award"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Best_Paper_Awards_Committee"/>
+        <Class IRI="http://sigkdd#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Best_Research_Paper_Award"/>
+        <Class IRI="http://sigkdd#Award"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Best_Student_Paper_Award"/>
+        <Class IRI="http://sigkdd#Award"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Best_Student_Paper_Supporter"/>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Bronze_Supporter"/>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Conference_hall"/>
+        <Class IRI="http://sigkdd#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Deadline_Abstract_Submission"/>
+        <Class IRI="http://sigkdd#Deadline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Deadline_Author_notification"/>
+        <Class IRI="http://sigkdd#Deadline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Deadline_Paper_Submission"/>
+        <Class IRI="http://sigkdd#Deadline"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Exhibitor"/>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#General_Chair"/>
+        <Class IRI="http://sigkdd#Organizator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Gold_Supporter"/>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Hotel"/>
+        <Class IRI="http://sigkdd#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Invited_Speaker"/>
+        <Class IRI="http://sigkdd#Speaker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Listener"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Main_office"/>
+        <Class IRI="http://sigkdd#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Organizator"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Organizing_Committee"/>
+        <Class IRI="http://sigkdd#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Organizing_Committee_member"/>
+        <Class IRI="http://sigkdd#Organizator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Paper"/>
+        <Class IRI="http://sigkdd#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Person"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://sigkdd#can_stay_in"/>
+            <Class IRI="http://sigkdd#Hotel"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Platinum_Supporter"/>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Program_Chair"/>
+        <Class IRI="http://sigkdd#Organizator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Program_Committee"/>
+        <Class IRI="http://sigkdd#Committee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Program_Committee_member"/>
+        <Class IRI="http://sigkdd#Organizator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Registration_Non-Member"/>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Registration_SIGKDD_Member"/>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Registration_SIGMOD_Member"/>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Registration_Student"/>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+        <Class IRI="http://sigkdd#Fee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Review"/>
+        <Class IRI="http://sigkdd#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Silver_Supporter"/>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Speaker"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Sponzor_fee"/>
+        <Class IRI="http://sigkdd#Fee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://sigkdd#Webmaster"/>
+        <Class IRI="http://sigkdd#Organizator"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Acceptance"/>
+        <Class IRI="http://cmt#Rejection"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#AssociatedChair"/>
+        <Class IRI="http://cmt#ConferenceChair"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#AuthorNotReviewer"/>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#AuthorNotReviewer"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Bid"/>
+        <Class IRI="http://cmt#Conference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Bid"/>
+        <Class IRI="http://cmt#Decision"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Bid"/>
+        <Class IRI="http://cmt#Document"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Bid"/>
+        <Class IRI="http://cmt#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Bid"/>
+        <Class IRI="http://cmt#Preference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Bid"/>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Conference"/>
+        <Class IRI="http://cmt#Decision"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Conference"/>
+        <Class IRI="http://cmt#Document"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Conference"/>
+        <Class IRI="http://cmt#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Conference"/>
+        <Class IRI="http://cmt#Preference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Conference"/>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Decision"/>
+        <Class IRI="http://cmt#Document"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Decision"/>
+        <Class IRI="http://cmt#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Decision"/>
+        <Class IRI="http://cmt#Preference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Decision"/>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Document"/>
+        <Class IRI="http://cmt#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Document"/>
+        <Class IRI="http://cmt#Preference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Document"/>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#ExternalReviewer"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Paper"/>
+        <Class IRI="http://cmt#Review"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Person"/>
+        <Class IRI="http://cmt#Preference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Person"/>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://cmt#Preference"/>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#acceptPaper"/>
+        <ObjectProperty IRI="http://cmt#acceptedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#addProgramCommitteeMember"/>
+        <ObjectProperty IRI="http://cmt#addedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#adjustBid"/>
+        <ObjectProperty IRI="http://cmt#adjustedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#assignExternalReviewer"/>
+        <ObjectProperty IRI="http://cmt#assignedByReviewer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#assignReviewer"/>
+        <ObjectProperty IRI="http://cmt#assignedByAdministrator"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#assignedTo"/>
+        <ObjectProperty IRI="http://cmt#hasBeenAssigned"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#co-writePaper"/>
+        <ObjectProperty IRI="http://cmt#hasCo-author"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#detailsEnteredBy"/>
+        <ObjectProperty IRI="http://cmt#enterConferenceDetails"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#enableVirtualMeeting"/>
+        <ObjectProperty IRI="http://cmt#virtualMeetingEnabledBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#enterReviewCriteria"/>
+        <ObjectProperty IRI="http://cmt#reviewCriteriaEnteredBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#finalizePaperAssignment"/>
+        <ObjectProperty IRI="http://cmt#paperAssignmentFinalizedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#hardcopyMailingManifestsPrintedBy"/>
+        <ObjectProperty IRI="http://cmt#printHardcopyMailingManifests"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#hasAuthor"/>
+        <ObjectProperty IRI="http://cmt#writePaper"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#hasConferenceMember"/>
+        <ObjectProperty IRI="http://cmt#memberOfConference"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#hasProgramCommitteeMember"/>
+        <ObjectProperty IRI="http://cmt#memberOfProgramCommittee"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#paperAssignmentToolsRunBy"/>
+        <ObjectProperty IRI="http://cmt#runPaperAssignmentTools"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#readByReviewer"/>
+        <ObjectProperty IRI="http://cmt#readPaper"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#rejectPaper"/>
+        <ObjectProperty IRI="http://cmt#rejectedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#reviewerBiddingStartedBy"/>
+        <ObjectProperty IRI="http://cmt#startReviewerBidding"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://cmt#writeReview"/>
+        <ObjectProperty IRI="http://cmt#writtenBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://sigkdd#award"/>
+        <ObjectProperty IRI="http://sigkdd#awarded_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://sigkdd#design"/>
+        <ObjectProperty IRI="http://sigkdd#designed_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://sigkdd#hold"/>
+        <ObjectProperty IRI="http://sigkdd#holded_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://sigkdd#pay"/>
+        <ObjectProperty IRI="http://sigkdd#payed_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://sigkdd#presentation"/>
+        <ObjectProperty IRI="http://sigkdd#presentationed_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://sigkdd#search"/>
+        <ObjectProperty IRI="http://sigkdd#searched_by"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#acceptPaper"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#acceptedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#addedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#adjustedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#assignedByReviewer"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#hasAuthor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#hasDecision"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#readByMeta-Reviewer"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#rejectedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#writtenBy"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#acceptPaper"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#acceptedBy"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#addProgramCommitteeMember"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#adjustBid"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#assignExternalReviewer"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#hasBid"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#rejectPaper"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#writePaper"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="http://cmt#writeReview"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#acceptPaper"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#acceptedBy"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#addProgramCommitteeMember"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#addedBy"/>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#adjustBid"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#adjustedBy"/>
+        <Class IRI="http://cmt#Bid"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#assignExternalReviewer"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#assignReviewer"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#assignedByAdministrator"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#assignedByReviewer"/>
+        <Class IRI="http://cmt#ExternalReviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#assignedTo"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#co-writePaper"/>
+        <Class IRI="http://cmt#Co-author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#detailsEnteredBy"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#enableVirtualMeeting"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#endReview"/>
+        <Class IRI="http://cmt#ProgramCommitteeChair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#enterConferenceDetails"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#enterReviewCriteria"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#finalizePaperAssignment"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hardcopyMailingManifestsPrintedBy"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hasAuthor"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hasBeenAssigned"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hasBid"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hasCo-author"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hasConferenceMember"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hasConflictOfInterest"/>
+        <Class IRI="http://cmt#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hasDecision"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hasProgramCommitteeMember"/>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#hasSubjectArea"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#markConflictOfInterest"/>
+        <ObjectUnionOf>
+            <Class IRI="http://cmt#Author"/>
+            <Class IRI="http://cmt#Chairman"/>
+            <Class IRI="http://cmt#Reviewer"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#memberOfConference"/>
+        <Class IRI="http://cmt#ConferenceMember"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#memberOfProgramCommittee"/>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#paperAssignmentFinalizedBy"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#paperAssignmentToolsRunBy"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#printHardcopyMailingManifests"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#readByMeta-Reviewer"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#readByReviewer"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#readPaper"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#rejectPaper"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#rejectedBy"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#reviewCriteriaEnteredBy"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#reviewerBiddingStartedBy"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#runPaperAssignmentTools"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#setMaxPapers"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#startReviewerBidding"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#submitPaper"/>
+        <Class IRI="http://cmt#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#virtualMeetingEnabledBy"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#writePaper"/>
+        <Class IRI="http://cmt#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#writeReview"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://cmt#writtenBy"/>
+        <Class IRI="http://cmt#Review"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#awarded_by"/>
+        <Class IRI="http://sigkdd#Award"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#can_stay_in"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#design"/>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#designed_by"/>
+        <Class IRI="http://sigkdd#Deadline"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#hold"/>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#holded_by"/>
+        <Class IRI="http://sigkdd#Conference"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#notification_until"/>
+        <Class IRI="http://sigkdd#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#obtain"/>
+        <Class IRI="http://sigkdd#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#pay"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#payed_by"/>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#presentation"/>
+        <Class IRI="http://sigkdd#Speaker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#presentationed_by"/>
+        <Class IRI="http://sigkdd#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#search"/>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#searched_by"/>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#submit"/>
+        <Class IRI="http://sigkdd#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://sigkdd#submit_until"/>
+        <Class IRI="http://sigkdd#Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#acceptPaper"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#acceptedBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#addProgramCommitteeMember"/>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#addedBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#adjustBid"/>
+        <Class IRI="http://cmt#Bid"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#adjustedBy"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#assignExternalReviewer"/>
+        <Class IRI="http://cmt#ExternalReviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#assignReviewer"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#assignedByAdministrator"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#assignedByReviewer"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#assignedTo"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#co-writePaper"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#detailsEnteredBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#enableVirtualMeeting"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#endReview"/>
+        <Class IRI="http://cmt#Review"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#enterConferenceDetails"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#enterReviewCriteria"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#finalizePaperAssignment"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hardcopyMailingManifestsPrintedBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hasAuthor"/>
+        <Class IRI="http://cmt#Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hasBeenAssigned"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hasBid"/>
+        <Class IRI="http://cmt#Bid"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hasCo-author"/>
+        <Class IRI="http://cmt#Co-author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hasConferenceMember"/>
+        <Class IRI="http://cmt#ConferenceMember"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hasConflictOfInterest"/>
+        <Class IRI="http://cmt#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hasDecision"/>
+        <Class IRI="http://cmt#Decision"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hasProgramCommitteeMember"/>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#hasSubjectArea"/>
+        <Class IRI="http://cmt#SubjectArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#markConflictOfInterest"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#memberOfConference"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#memberOfProgramCommittee"/>
+        <Class IRI="http://cmt#ProgramCommittee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#paperAssignmentFinalizedBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#paperAssignmentToolsRunBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#printHardcopyMailingManifests"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#readByMeta-Reviewer"/>
+        <Class IRI="http://cmt#Meta-Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#readByReviewer"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#readPaper"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#rejectPaper"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#rejectedBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#reviewCriteriaEnteredBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#reviewerBiddingStartedBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#runPaperAssignmentTools"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#setMaxPapers"/>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#startReviewerBidding"/>
+        <Class IRI="http://cmt#Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#submitPaper"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#virtualMeetingEnabledBy"/>
+        <Class IRI="http://cmt#Administrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#writePaper"/>
+        <Class IRI="http://cmt#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#writeReview"/>
+        <Class IRI="http://cmt#Review"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://cmt#writtenBy"/>
+        <Class IRI="http://cmt#Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#award"/>
+        <Class IRI="http://sigkdd#Award"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#can_stay_in"/>
+        <Class IRI="http://sigkdd#Place"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#design"/>
+        <Class IRI="http://sigkdd#Deadline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#designed_by"/>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#hold"/>
+        <Class IRI="http://sigkdd#Conference"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#holded_by"/>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#notification_until"/>
+        <Class IRI="http://sigkdd#Deadline_Author_notification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#obtain"/>
+        <Class IRI="http://sigkdd#Award"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#pay"/>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#payed_by"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#presentation"/>
+        <Class IRI="http://sigkdd#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#presentationed_by"/>
+        <Class IRI="http://sigkdd#Speaker"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#search"/>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#searched_by"/>
+        <Class IRI="http://sigkdd#ACM_SIGKDD"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#submit"/>
+        <Class IRI="http://sigkdd#Paper"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://sigkdd#submit_until"/>
+        <Class IRI="http://sigkdd#Deadline"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://cmt#acceptsHardcopySubmissions"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://cmt#logoURL"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://cmt#maxPapers"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://cmt#name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://cmt#paperID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://cmt#reviewsPerPaper"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://cmt#siteURL"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="http://cmt#title"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#acceptsHardcopySubmissions"/>
+        <Class IRI="http://cmt#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#date"/>
+        <Class IRI="http://cmt#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#email"/>
+        <Class IRI="http://cmt#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#logoURL"/>
+        <Class IRI="http://cmt#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#maxPapers"/>
+        <Class IRI="http://cmt#ProgramCommitteeMember"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#name"/>
+        <ObjectUnionOf>
+            <Class IRI="http://cmt#Conference"/>
+            <Class IRI="http://cmt#Person"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#paperID"/>
+        <Class IRI="http://cmt#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#reviewsPerPaper"/>
+        <Class IRI="http://cmt#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#siteURL"/>
+        <Class IRI="http://cmt#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://cmt#title"/>
+        <Class IRI="http://cmt#Paper"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#City_of_conference"/>
+        <Class IRI="http://sigkdd#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#Currency"/>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#Date"/>
+        <Class IRI="http://sigkdd#Deadline"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#E-mail"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#End_of_conference"/>
+        <Class IRI="http://sigkdd#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#Name"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#Name_of_conference"/>
+        <Class IRI="http://sigkdd#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#Name_of_sponsor"/>
+        <Class IRI="http://sigkdd#Sponzor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#Nation"/>
+        <Class IRI="http://sigkdd#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#Price"/>
+        <Class IRI="http://sigkdd#Registration_fee"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://sigkdd#Start_of_conference"/>
+        <Class IRI="http://sigkdd#Conference"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#acceptsHardcopySubmissions"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#date"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#logoURL"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#maxPapers"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#paperID"/>
+        <Datatype abbreviatedIRI="xsd:unsignedLong"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#reviewsPerPaper"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#siteURL"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://cmt#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#City_of_conference"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#Currency"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#Date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#E-mail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#End_of_conference"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#Name_of_conference"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#Name_of_sponsor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#Nation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#Price"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://sigkdd#Start_of_conference"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://cmt#ExternalReviewer</IRI>
+        <Literal>An External Reviewer is a person that has been assigned to review a paper for another Reviewer, but is not themselves a Reviewer. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://cmt#Meta-Reviewer</IRI>
+        <Literal>A special type of Reviewer.  There can be any number of Reviewers for a given paper, but only one Meta-Reviewer.  The Meta-Reviewer can go over all the reviews submitted for the paper and submit their own review.  Questions for the Meta-Reviewer can be different from those for a normal Reviewer.  Their role is to ensure that the reviews are good and consistent. The decision to use Meta-Reviewers is optional, and must be set before paper assignment occurs.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://cmt#ProgramCommitteeMember</IRI>
+        <Literal>The Program Committee consists of all members of the conference except for Authors who are not also Reviewers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://cmt#markConflictOfInterest</IRI>
+        <Literal>In CMT terms, a ‘Conflict of Interest’ is an association between a specific Reviewer and a specific Paper that states there is a conflict of interest between that Reviewer and that paper. Conflicts can be marked by Authors (during paper submission) or by Reviewers (in Phase 2) or by Chairmen (in Phase 3).
+
+Based on that conflict, the reviewer will not be able to bid on the paper, be assigned to that paper (either automatically by the system or manually by a Chairman) or view review submissions for that paper.
+</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

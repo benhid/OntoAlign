@@ -1,0 +1,5101 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="Optional.of(http://www.fbk.eu/ontologies/virtualcoach)#"
+     xml:base="Optional.of(http://www.fbk.eu/ontologies/virtualcoach)"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="Optional.of(http://www.fbk.eu/ontologies/virtualcoach)"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#contains">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationRule -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationRule">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationUser">
+        <rdfs:domain rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+        <rdfs:range rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#hasViolationLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.fbk.eu/ontologies/virtualcoach#hasViolationLevel">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Violation"/>
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ViolationInterval"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AdultBovineFattyRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineFattyRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AdultBovineLeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AdultSheepLeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AdultSheepLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AgedCheese -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Alanine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Alanine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Alcohol -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Alcohol">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Algae -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Algae">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Aminoacid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Aminoacid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AnimalFats -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AnimalFats">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFatsAndOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AnimalFatsAndOils -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AnimalFatsAndOils">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Aminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Arginine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Arginine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#AsparticAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#AsparticAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#BasicFood -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#BasicFood">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Beer -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Beer">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#BetaCarotene -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#BetaCarotene">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Beverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Beverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Biotin -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Biotin">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Bread -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Bread">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Breakfast -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Breakfast">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CandiedFruits -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CandiedFruits">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Candy -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Candy">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CannedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CannedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CannedOrCookedFruit -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CannedOrCookedFruit">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CannedVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CannedVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Carbs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Carbs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Cereals -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Cereals">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Cheese -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Cheese">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ColdCuts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ColdCuts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ComposedFood -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ComposedFood">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+                                    <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Dressing"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Copper -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Copper">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CornMealMush -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CornMealMush">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Cream -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Cream">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetSpreads"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#CulinaryErbs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CulinaryErbs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Cystine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Cystine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Day -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Day">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Timespan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Dessert -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Dessert">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Dressing -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Dressing">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#DryCulinaryErbs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#DryCulinaryErbs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CulinaryErbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#DryFruits -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#DryFruits">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#DryMushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#DryMushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedMushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Eggs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Eggs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-0001 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0001">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Bread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-0005 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0005">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-0008 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0008">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-0011 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0011">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-0015 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0015">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#RedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-0017 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0017">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-0019 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0019">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-0020 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-0020">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#IceCream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-006 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-006">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-011 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-011">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-012 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-012">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-015 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-015">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-016 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-016">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-017 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-017">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-022 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-022">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-023 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-023">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-025 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-025">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-029 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-029">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-031 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-031">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetSpreads"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-032 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-032">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-052 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-052">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Eggs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-053 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-053">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LegumesAndLegumeProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-061 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-061">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ColdCuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-062 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-062">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Sausages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-066 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-066">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-068 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-068">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-070 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-070">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Pastry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-071 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-071">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-078 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-078">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-081 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-081">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-085 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-085">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-087 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-087">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-091 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-091">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-10 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-10">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100004 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100004">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100009 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100009">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100015 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100015">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100019 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100019">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100020 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100020">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100031 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100031">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100051 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100051">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100092 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100092">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100097 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100097">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshShellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100110 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100110">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100112 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100112">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100122 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100122">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedShellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100139 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100139">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100143 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100143">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WheatFour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100144 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100144">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100155 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100155">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PizzaAndFocacciaBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100166 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100166">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100170 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100170">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CannedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100172 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100172">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100173 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100173">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedMushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100174 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100174">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#DryMushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100175 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100175">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MarinatedMushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100176 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100176">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100177 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100177">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100178 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100178">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100182 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100182">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100183 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100183">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100184 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100184">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100187 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100187">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CandiedFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100196 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100196">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CannedOrCookedFruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100201 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100201">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FruitJuices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100205 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100205">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VinegarDressing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100207 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100207">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Spices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100217 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100217">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Spices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100225 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100225">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100227 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100227">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetsAndCakesMakingProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-10023 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-10023">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100230 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100230">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100235 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100235">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100243 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100243">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100245 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100245">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-100289 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-100289">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1043 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1043">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PorkFattyRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1070 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1070">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1084 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1084">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanGameMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1087 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1087">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1088 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1088">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1089 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1089">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1091 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1091">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1092 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1092">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1093 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1093">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanGameMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1098 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1098">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1101 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1101">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CannedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1147 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1147">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ColdCuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1149 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1149">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Sausages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1150 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1150">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Sausages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1151 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1151">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Sausages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1155 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1155">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ColdCuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1204 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1204">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineLeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1205 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1205">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineFattyRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1208 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1208">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineLeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1209 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1209">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineLeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1244 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1244">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PorkLeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1264 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1264">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AdultSheepLeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1294 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1294">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1295 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1295">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-12985 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-12985">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1299 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1299">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineFattyRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-13 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-13">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1300 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1300">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1301 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1301">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1303 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1303">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshShellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1306 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1306">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1307 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1307">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1308 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1308">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1309 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1309">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshShellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1311 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1311">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1313 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1313">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1314 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1314">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1316 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1316">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1317 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1317">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1318 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1318">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1319 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1319">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1320 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1320">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1322 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1322">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1324 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1324">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1325 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1325">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1326 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1326">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1327 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1327">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1328 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1328">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-14 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-14">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-15 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-15">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1502 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1502">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1504 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1504">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1505 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1505">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MarinatedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1506 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1506">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1512 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1512">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1513 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1513">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1516 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1516">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Eggs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-16 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-16">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1600 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1600">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1601 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1601">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1602 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1602">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1604 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1604">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1611 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1611">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PowderedMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1620 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1620">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PowderedMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1622 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1622">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PowderedMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1630 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1630">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Yogurt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1633 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1633">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Yogurt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1702 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1702">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1706 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1706">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1710 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1710">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1711 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1711">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1713 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1713">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1715 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1715">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1717 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1717">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1718 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1718">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1721 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1721">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1722 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1722">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1725 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1725">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1726 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1726">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-18 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-18">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedStarchyVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1800 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1800">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Eggs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1804 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1804">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Eggs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1805 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1805">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Eggs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1900 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1900">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-19007 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19007">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-19014 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19014">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1902 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1902">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-19021 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19021">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WheatFour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-19022 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19022">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-19032 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19032">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#IceCream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-1904 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-1904">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-19061 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19061">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetsAndCakesMakingProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-19065 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19065">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ColdCuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-19067 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-19067">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-20 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-20">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-2003 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2003">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Candy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-2004 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2004">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Candy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-2005 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2005">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-2006 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2006">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ChocolateAndCocoa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-2011 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2011">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#IceCream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-2012 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2012">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Candy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-2017 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-2017">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-202 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-202">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-206 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-206">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-3 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-30039 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-30039">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-3004 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3004">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-3006 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3006">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FruitJuices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-30097 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-30097">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpecialBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-3014 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3014">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Salt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-3016 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3016">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetBeveragesAndJuices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-3017 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3017">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#TeaBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-3018 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3018">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Salt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-302 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-302">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-303 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-303">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-304 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-304">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-306 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-306">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-307 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-307">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-308 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-308">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-309 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-309">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-310 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-310">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-312 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-312">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-31298 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-31298">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PorkLeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-313 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-313">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-315 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-315">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-3153 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-3153">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-316 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-316">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-317 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-317">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-318 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-318">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-319 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-319">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-322 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-322">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-324 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-324">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-326 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-326">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-327 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-327">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-33 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-33">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpecialBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-330 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-330">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-331 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-331">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-332 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-332">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-333 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-333">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-334 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-334">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-335 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-335">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-336 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-336">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-337 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-337">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-341 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-341">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-342 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-342">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-343 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-343">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-344 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-344">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-346 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-346">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-349 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-349">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-35 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-35">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WhiteBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-382 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-382">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedStarchyVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-391 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-391">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-4 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-400093 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-400093">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-4002 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4002">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-4007 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4007">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-4008 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4008">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-4009 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4009">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-401 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-401">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-4010 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4010">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-4011 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-4011">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-402 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-402">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-403 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-403">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-404 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-404">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-405 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-405">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FruitBasedBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-406 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-406">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-407 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-407">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-408 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-408">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-409 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-409">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-411 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-411">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-412 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-412">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-413 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-413">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-415 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-415">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-416 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-416">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-417 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-417">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-419 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-419">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-420 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-420">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-421 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-421">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-422 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-422">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-423 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-423">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-424 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-424">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-425 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-425">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-426 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-426">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-427 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-427">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-428 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-428">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-429 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-429">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-450085 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-450085">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-5 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-5">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Rice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-500003 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500003">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WheatFour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-500010 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500010">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Rice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-500019 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500019">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-500021 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500021">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-500023 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500023">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-500025 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500025">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-500029 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500029">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FruitJuices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-500038 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-500038">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#DryFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-50086 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-50086">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-502 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-502">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#RoastedNuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-503 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-503">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-50399 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-50399">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshStarchyVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-504 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-504">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-505 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-505">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#DryFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-506 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-506">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#DryFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-508 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-508">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-51 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-51">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Pasta"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-512 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-512">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-514 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-514">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#DryFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-524 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-524">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-53017 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-53017">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Syrups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-53018 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-53018">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FruitJuices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-590 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-590">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#OlivesAndOliveProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-592 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-592">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#OlivesAndOliveProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-600009 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-600009">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-60088 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-60088">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpecialBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-60089 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-60089">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Rice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-60092 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-60092">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-602004 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-602004">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshShellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-602073 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-602073">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-603501 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-603501">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-603554 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-603554">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshMushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-606010 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-606010">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalFats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-606512 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-606512">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FruitPeel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-666005 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-666005">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpecialBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-666006 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-666006">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-666007 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-666007">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-666009 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-666009">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-666011 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-666011">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ComposedFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700016 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700016">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700019 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700019">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpecialBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700027 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700027">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700080 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700080">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700082 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700082">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700105 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700105">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700178 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700178">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700285 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700285">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700342 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700342">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CannedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700405 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700405">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700407 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700407">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700418 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700418">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshShellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700428 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700428">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalMilk"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700459 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700459">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#TeaBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700460 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700460">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#TeaBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700466 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700466">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#OlivesAndOliveProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700483 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700483">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700484 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700484">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700487 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700487">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700637 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700637">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SoyProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700639 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700639">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700795 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700795">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-700797 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-700797">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-701003 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-701003">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-701337 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-701337">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WhiteBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-702404 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-702404">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FruitPeel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-702901 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-702901">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-705153 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-705153">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-71786 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-71786">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-71787 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-71787">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-72 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-72">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetSnacksAndBrioches"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-73 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-73">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BiscuitsAndCrackers"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-74 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-74">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-77 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-77">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PizzaAndFocacciaBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-777010 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-777010">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-777013 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-777013">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-800188 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-800188">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8004 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8004">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#DryCulinaryErbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8008 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8008">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCulinaryErbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8010 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8010">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#DryCulinaryErbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8019 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8019">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Spices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8022 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8022">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshAlgae"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8026 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8026">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FruitBasedBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8029 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8029">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8030 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8030">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8033 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8033">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8035 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8035">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshCulinaryErbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8036 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8036">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#DryMushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8037 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8037">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SoyProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8038 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8038">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SoyProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805080 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805080">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AgedCheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805166 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805166">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805249 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805249">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AdultBovineLeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8053 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8053">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Yogurt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805470 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805470">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8055 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8055">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805548 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805548">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpecialBread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805678 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805678">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8057 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8057">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805712 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805712">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8058 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8058">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805867 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805867">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805874 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805874">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8059 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8059">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805941 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805941">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Jam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805951 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805951">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Jam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-805958 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-805958">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8061 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8061">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8063 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8063">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8669 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8669">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8678 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8678">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8685 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8685">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8686 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8686">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8729 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8729">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-8743 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-8743">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Yogurt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-888001 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888001">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-888003 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888003">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Seeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-888005 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888005">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-888006 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888006">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedShellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-888008 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888008">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SoyProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-888010 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888010">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SoyProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-888011 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888011">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-888014 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888014">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-888015 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-888015">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-900 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9001 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9001">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9003 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9003">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CannedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-900503 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900503">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetsAndCakesMakingProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-900505 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900505">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Pastry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-900546 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900546">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Soups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-900606 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900606">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-900864 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-900864">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-901 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-901">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-902 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-902">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9023 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9023">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9026 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9026">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Jam"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9029 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9029">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#TeaBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9032 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9032">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CoffeeAndSubstitutes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9039 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9039">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-904 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-904">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9047 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9047">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-905 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-905">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9050 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9050">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9053 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9053">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-906 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-906">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9061 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9061">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ColdCuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9068 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9068">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-907 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-907">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9070 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9070">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Shellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-908 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-908">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-909 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-909">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-910 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-910">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-911 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-911">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-9600 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-9600">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Seeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-999050 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-999050">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedCereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-999692 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-999692">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-999905 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-999905">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Wine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FOOD-999964 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FOOD-999964">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Spices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#RedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FattyWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Fish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Fish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Flour -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Flour">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FolicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FolicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Food -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Food"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshAlgae -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshAlgae">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Algae"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshCereals -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshCereals">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshCheese -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshCheese">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cheese"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshCulinaryErbs -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshCulinaryErbs">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CulinaryErbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshFish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshFish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshFruits -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshFruits">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshLegumes -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshLegumes">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LegumesAndLegumeProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshMollusc">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mollusc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshMushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshMushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshShellfish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshShellfish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Shellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshStarchyVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshStarchyVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FreshVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyFreeVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Fructose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Fructose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FruitBasedBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FruitBasedBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FruitJuices -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FruitJuices">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetBeveragesAndJuices"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#FruitPeel -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FruitPeel">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Fruits -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Fruits">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Galactose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Galactose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Glucose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Glucose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#GlutamicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#GlutamicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Glycine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Glycine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Histidine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Histidine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#IceCream -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#IceCream">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Iron -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Iron">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Isoleucine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Isoleucine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Jam -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Jam">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SweetSpreads"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Lactose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Lactose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LeanGameMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LeanGameMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#OtherMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#RedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LegumesAndLegumeProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LegumesAndLegumeProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Leucine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Leucine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#LinolenicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#LinolenicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Lipid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Lipid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Lipid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Lunch -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Lunch">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Lysine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Lysine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Maltose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Maltose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Manganese -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Manganese">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MarinatedFish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MarinatedFish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MarinatedMushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MarinatedMushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedMushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Meal -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meal"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Meat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Methionine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Methionine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Mineral -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Mineral">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Mollusc -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Mollusc">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Mushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Mushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Beverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Nutrient -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Nuts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Nuts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#OlivesAndOliveProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#OlivesAndOliveProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#OtherMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#OtherMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PantothenicAcid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PantothenicAcid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Pasta -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Pasta">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WheatFour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Pastry -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Pastry">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Phenylalanine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Phenylalanine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Phosphorus -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Phosphorus">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PizzaAndFocacciaBread -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PizzaAndFocacciaBread">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Aminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PorkFattyRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PorkFattyRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PorkLeanRedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PorkLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanRedMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PoultryFattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PoultryLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LeanWhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#PowderedMilk -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#PowderedMilk">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedCereals -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedCereals">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Cereals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedFish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Fish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#LegumesAndLegumeProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedMushrooms -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedMushrooms">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mushrooms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedShellfish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedShellfish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Shellfish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedStarchyVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedStarchyVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#StarchyFreeVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Proline -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Proline">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Protein -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Protein">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#RedMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RedMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meat"/>
+        <owl:disjointWith rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Rice -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Rice">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#RoastedNuts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#RoastedNuts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Salt -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Salt">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Sausages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Sausages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FattyRedMeat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Salt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Spices"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Seeds -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Seeds">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Selenium -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Selenium">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Mineral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Shellfish -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Shellfish">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Soups -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Soups">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ComposedFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SoyProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SoyProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SpecialBread -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SpecialBread">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Bread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Spices -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Spices">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SpiritsAndLiquor">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Starch -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Starch">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#StarchyFreeVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#StarchyFreeVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#StarchyVegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Sucrose -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Sucrose">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Carbs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweeteners">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SweetBeveragesAndJuices -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SweetBeveragesAndJuices">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SweetSnacksAndBrioches -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SweetSnacksAndBrioches">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SweetSpreads -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SweetSpreads">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#SweetsAndCakesMakingProducts -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SweetsAndCakesMakingProducts">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dessert"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Syrups -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Syrups">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#TableCream -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#TableCream">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AnimalFats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#TeaBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#TeaBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#NonAlcoholicBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Threonine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Threonine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Timespan -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Timespan"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#TomatoSauces -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#TomatoSauces">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Tryptophan -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Tryptophan">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Tyrosine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Tyrosine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#PolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#User -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Valine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Valine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ApolarAminoacid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetableBasedBeverages -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetableBasedBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#ProcessedVegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Vegetables -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Vegetables">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#BasicFood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetalFats -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetalFats">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalFatsAndOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetalFatsAndOils -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetalFatsAndOils">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetalOils -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetalOils">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#VegetalFatsAndOils"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VegetalProtein -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetalProtein">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Protein"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VinegarDressing -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VinegarDressing">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Dressing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Violation -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Violation">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#hasViolationRule"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MonitoringRule"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#hasViolationUser"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#User"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#hasViolationLevel"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#ViolationInterval -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#ViolationInterval"/>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Vitamin -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Vitamin">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Nutrient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminA -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminA">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminB1 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminB1">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminB12 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminB12">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminB6 -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminB6">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminC -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminC">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminD -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminD">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#VitaminE -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VitaminE">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Week -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Week">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Timespan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WheatFour -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WheatFour">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Flour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WhiteBread -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WhiteBread">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Bread"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WhiteMeat">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Meat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#WholeWheatFlour">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#Flour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Wine -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Wine">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#AlcoholicBeverages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.fbk.eu/ontologies/virtualcoach#Yogurt -->
+
+    <owl:Class rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Yogurt">
+        <rdfs:subClassOf rdf:resource="http://www.fbk.eu/ontologies/virtualcoach#MilkAndYogurt"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CerealsAndGrainProducts"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#CulinaryErbs"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Eggs"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FatsAndOils"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#FishAndSeafood"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Fruits"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Meat"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#MilkAndDairyProducts"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#NutSeedAndOliveProducts"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Salt"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SausagesAndColdCuts"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#Spices"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#SugarAndSweets"/>
+            <rdf:Description rdf:about="http://www.fbk.eu/ontologies/virtualcoach#VegetablesAndLegumes"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+

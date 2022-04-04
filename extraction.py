@@ -2,43 +2,64 @@ import argparse
 import json
 from pathlib import Path
 
-from owlready2 import entity, owl, get_ontology
+from owlready2 import entity, get_ontology, owl
 
 from lib.Label import label_to_string, name_to_string
 
-# Initiate the parser.
-parser = argparse.ArgumentParser()
-parser.add_argument("onto", type=Path, help="Path to the ontology file.")
 
-
-def super_classes(cls):
-    supclasses = list()
+def superclasses_of(cls: entity.ThingClass) -> list[entity.ThingClass]:
+    supclasses = set()
     for supclass in cls.is_a:
         if type(supclass) == entity.ThingClass and supclass != owl.Thing:
-            supclasses.append(supclass)
-    return supclasses
+            supclasses.add(supclass)
+    return list(supclasses)
 
 
-def get_class_names(cls) -> list[str]:
+def get_class_path(cls: entity.ThingClass, p) -> list[str]:
+    p.append(cls.iri)
+    supclasses = superclasses_of(cls=cls)
+    if owl.Thing in supclasses or len(supclasses) == 0:
+        return p
+    else:
+        return get_class_path(cls=supclasses[0], p=p)
+
+
+def get_class_names(cls: entity.ThingClass) -> list[str]:
     """
     Get the URI name and english labels of a class.
     """
     name = [name_to_string(cls.name)]
-    labels = [label_to_string(label) for label in cls.label]
-    #supclasses = [name_to_string(sup.name) for sup in super_classes(cls)]
-    return name + labels
+    labels = cls.label.en or cls.label
+    labels = [label_to_string(label) for label in labels]
+    return labels or name
+
+
+def get_classes(onto: Path) -> list[entity.ThingClass]:
+    onto = get_ontology(str(onto)).load()
+    return onto.classes()
 
 
 if __name__ == "__main__":
+    # Initiate the parser.
+    parser = argparse.ArgumentParser()
+    parser.add_argument("onto", type=Path, help="Path to the ontology file.")
+    parser.add_argument("-p", "--prefix", type=str)
+
     # Read arguments from the command line.
     args = parser.parse_args()
 
-    onto = get_ontology(str(args.onto)).load()
+    classes = get_classes(args.onto)
 
-    c_names = {}
+    names = {}
+    class_paths = []
 
-    for c in onto.classes():
-        c_names[c.iri] = get_class_names(c)
+    for cls in classes:
+        names[cls.iri] = get_class_names(cls=cls)
+        class_paths.append(get_class_path(cls=cls, p=list()))
 
-    with open(args.onto.stem + "_names.json", "w") as outfile:
-        json.dump(c_names, outfile)
+    with open(args.prefix + "names.json", "w") as outfile:
+        json.dump(names, outfile)
+
+    with open(args.prefix + "paths.txt", "w") as outfile:
+        for path in class_paths:
+            outfile.write("%s\n" % ",".join(path))
